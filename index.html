@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Engineering Simulation On Azure</title>
+        
+        <!--SEO -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+        <title>Simulation on Azure</title>
+        <link rel="canonical" href="http://simulation.azure.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="simulation, engineering simulation, star-ccm+, starcmm, star-ccm, openfoam, azure, cloud, hpc, hpc cloud, microsoft azure, microsoft, star-ccm global conference, intel MPI, high performance computing, azure cloud, CFD, ls-dyna" >
+        <meta name="description" content="Using Microsoft Azure for Engineering Simulation. Azure provides world-class HPC on demand, letting you simulate complex models without having to manage infrastructure.">
+        
+        <!--FACEBOOK-->
+        <meta property="og:title" content="Engineering Simulation in the Cloud with Microsoft Azure" >
+        <meta property="og:site_name" content="Engineering Simulation on Azure">
+        <meta property="og:url" content="http://simulation.azure.com" >
+        <meta property="og:description" content="Using Microsoft Azure for Engineering Simulation. Azure provides world-class HPC on demand, letting you simulate complex models without having to manage infrastructure." >
+        <meta property="og:image" content="http://simulation.azure.com/images/simulationonazurefb.png" >
+        <meta property="og:type" content="website" >
+        <meta property="og:locale" content="en_US" >
+        
+        <!--TWITTER-->
+        <meta property="twitter:card" content="summary" >
+        <meta property="twitter:title" content="Engineering Simulation in the Cloud with Microsoft Azure" >
+        <meta property="twitter:description" content="Using Microsoft Azure for Engineering Simulation. Azure provides world-class HPC on demand, letting you simulate complex models without having to manage infrastructure." >
+        <meta property="twitter:creator" content="@azure" >
+        <meta property="twitter:url" content="http://simulation.azure.com" >
+        <meta property="twitter:image" content="http://simulation.azure.com/images/simulationonazurefb.png" >
+
+        <!-- 
+        To collect end-user usage analytics about your application, 
+        insert the following script into each page you want to track.
+        Place this code immediately before the closing </head> tag,
+        and before any other scripts. Your first data will appear 
+        automatically in just a few seconds.
+        -->
+        <script type="text/javascript">
+          var appInsights=window.appInsights||function(config){
+            function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+            }({
+                instrumentationKey:"492d448d-fb82-45fe-90b4-9a5fdad61e78"
+            });
+               
+            window.appInsights=appInsights;
+            //appInsights.trackPageView();
+            appInsights.trackPageView(null, null, {urlReferrer: document.referrer});
+        </script>
+    </head>
+    <body class="width-constraint">
+        <!-- Navigation -->
+        <div class="az-nav width-contraint">
+            <div class="container width-contraint">
+                <a target="_blank" href="https://www.azure.com"><div class="az-nav-logo" data-track="true" id="azure-home-page">Microsoft Azure</div></a>
+                <div class="az-nav-right">
+
+                    <div class="az-nav-link" data-id="az-getting-started" data-track="true" id="nav-getting-started">Getting Started</div>
+                    <div class="az-nav-link" data-id="az-why-azure" data-track="true" id="nav-why-azure">Why Azure?</div>
+                    <div class="az-nav-link" data-id="az-applications" data-track="true" id="nav-applications">Applications</div>
+                    <div class="az-nav-link" data-id="az-pricing" data-track="true" id="nav-pricing">Pricing</div>
+                    <a target="_blank" href="mailto:bigcompute@microsoft.com"><div class="az-nav-link" data-track="true" id="nav-contact">Contact Us</div></a>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!-- Banner -->
+        <div class="az-banner width-constraint">
+            <img src="images/banner.png" class="width-constraint">
+            <div class="container width-constraint">
+                <div class="az-banner-text">
+                    <h2>Using <span style="color:#00abec">Microsoft Azure</span> for</h2>
+                    <h1>Engineering Simulation</h1>
+                    <h2>We provide world-class HPC on demand, letting you simulate 
+    complex models without having to manage infrastructure.</h2>
+                    <a target="_blank" href="https://azure.microsoft.com/en-us/free/"><div class="az-banner-start" data-track="true" id="get-started-for-free">
+                        Get Started for Free
+                    </div></a>
+                </div> 
+            </div>
+        </div>
+        
+        <!-- Announcement
+        <div class="az-announcement width-constraint">
+            <div class="container">
+                <img src="images/star-ccm-conference-logo.png">&nbsp;
+                <span>Chat with us in Prague at the Star-CCM Global Conference on March 7-9</span>
+            </div>    
+        </div>
+        -->
+                
+        <div class="az-getting-started" id="az-getting-started">
+            <br>
+            <div class="container width-constraint">
+                <h2><strong>Getting Started</strong></h2>
+                <br>
+                <div class="row">
+                    <div class="az-getting-started-tab col-md-4 col-xs-4">
+                        <div class="az-getting-started-header">
+                            Create a Star-CCM, OpenFOAM VM
+                        </div>
+                        <div class="az-getting-started-description">
+                            In one click, spin up a VM running OpenFOAM in the cloud with Star-CCM pre-installed and MPI pre-configured. Just tell us what hardware you want, and we’ll take care of the rest.
+                        </div>
+                        <a target="_blank" href="https://azure.microsoft.com/en-us/marketplace/partners/ubercloud/star-ccm-v10-04/">
+                            <div class="az-getting-started-action"data-track="true" id="gs-start-with-azure">
+                                <strong>Start with Azure</strong>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="az-getting-started-tab col-md-4 col-xs-4">
+                        <div class="az-getting-started-header">
+                            Create an Intel MPI OpenFOAM Cluster
+                        </div>
+                        <div class="az-getting-started-description">
+                            A getting started tutorial for running OpenFoam with Microsoft HPC Pack on a Linux RDMA cluster in Azure.
+                        </div>
+                        <a target="_blank" href="https://github.com/Azure/azure-content/blob/master/articles/virtual-machines/virtual-machines-linux-cluster-hpcpack-openfoam.md">
+                            <div class="az-getting-started-action" data-track="true" id="gs-learn-how-from-github">
+                                <strong>Learn how from Github</strong>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="az-getting-started-tab col-md-4 col-xs-4">
+                        <div class="az-getting-started-header">
+                            Drill in to our hardware specs
+                        </div>
+                        <div class="az-getting-started-description">
+                            Everything you need to know about our HPC Hardware including specs, deployment considerations and how to access the RDMA network.
+                        </div>
+                        <a target="_blank" href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-a8-a9-a10-a11-specs/">
+                            <div class="az-getting-started-action" data-track="true" id="gs-learn-more">
+                                <strong>Learn more</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <br>        
+        </div> 
+
+                   
+        <br>
+        <br>  
+        <!-- Why Azure? -->
+        <div class="container az-selling-points width-constraint"  id="az-why-azure">
+            <h2><strong>Why work on Azure?</strong></h2>
+            <br>
+            <div class="row">
+                <div class="az-selling-point col-md-6 col-xs-6" style="margin-right:-1px;">
+                    <img src="images/selling-point-01.png">
+                    <h3><strong>World Class Compute</strong></h3>
+                    <div class="az-selling-point-description">
+                        Run your work using high-end compute nodes with QDR Infiniband, and take advantage of a backend network with MPI latency of under 3 micro-seconds and non-blocking 32 GB/second throughput. 
+                    </div>  
+                </div>
+                <div class="az-selling-point col-md-6 col-xs-6">
+                    <img src="images/selling-point-02.png">
+                    <h3><strong>Stay focused on design, <br>
+                    we’ll take care of the rest</strong></h3>
+                    <div class="az-selling-point-description">
+                        We’ll provide the infrastructure so that you can spend more time honing in on the right design, less time getting your products to the market.
+                    </div>  
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="az-selling-point col-md-6 col-xs-6" style="margin-right:-1px; margin-top:-1px;">
+                    <img src="images/selling-point-03.png">
+                    <h3><strong>Burst To Cloud</strong></h3>
+                    <div class="az-selling-point-description">
+                        Run out of compute? Our seamless Enterprise-ready solutions can help you burst in to the cloud, letting you scale your resources as need. On Azure, you pay only for what you’re using. 
+                    </div>  
+                </div>
+                <div class="az-selling-point col-md-6 col-xs-6" style="margin-top: -1px;">
+                    <img src="images/selling-point-04.png">
+                    <h3><strong>Work faster, save more</strong></h3>
+                    <div class="az-selling-point-description">
+                        With our high performance hardware and the scalability of Azure, you’ll be able to run more simulation in less time. With increased efficiency, you’ll make the most out of your software licenses, getting more done with lower costs.
+                    </div>  
+                </div>
+            </div>
+            
+        </div> 
+                
+        <br>
+        <br>
+        
+        <!-- Case Studies -->
+        <div class="az-case-study-wrapper">
+            <br>
+            <br>
+            <div class="container width-constraint" id="az-case-study"></div>
+            <br>
+            <div class="container az-case-study-seperator width-constraint"><hr>
+                <div id="az-case-study-navigation"></div>  
+            </div>  
+            <br>
+            <br>
+        </div>
+        
+        <br>
+        <br>
+                           
+        <!-- Partner/Ecosystem/Applications -->
+        <div class="container width-constraint" id="az-applications">
+                      
+            <h2><strong>Supported Applications</strong></h2>
+            
+            <br>
+            <table class="az-applications">
+                <tr>
+                    <td>Crash/Dynamics/Impact</td>
+                    <td>LS-DYNA&reg;, PAM-CRASH&reg;, Abaqus/Explicit&reg;, RADIOSS&reg;</td>
+                </tr>
+                <tr>
+                    <td>CFD</td>
+                    <td>AcuSolve&reg;, Abaqus&reg;, Fluent&reg;, STAR-CCM+&reg;, OpenFOAM&reg;, ANSYS CFX&reg; </td>
+                </tr>
+                <tr>
+                    <td>Structural</td>
+                    <td>Abaqus/Standard&reg;, OptiStruct&reg;, ANSYS Mechanical&reg;, MSC NASTRAN&reg;</td>
+                </tr>
+                <tr>
+                    <td>Visualization</td>
+                    <td>Paraview&reg;, Blender&reg;, CEI&reg;, Fieldview&reg;</td>
+                </tr>
+                <tr>
+            </table>
+            
+            <br>
+            <br>
+            
+            <div id="az-pricing" style="padding-top: 12px;">
+                <h2><strong>Pricing</strong></h2>
+                <br>
+                <h3>Network optimized: fast networking with InifiniBand support</h3>
+                <div class="">
+                    The A8 and A9 virtual machines feature <em>Intel&reg; Xeon&reg; E5 processors</em>, with 32 Gbit/s Infiniband network and remote direct memory access (RDMA) technology. These instances are ideal for Message Passing Interface (MPI) applications, high-performance clusters for modeling and simulations, video encoding, and other compute or network intensive scenarios. These instances are available in select data centers. 
+                </div>
+                <table class="az-pricing-table">
+                    <tr class="az-pricing-table-headers">
+                        <td>Instance</td>
+                        <td>Cores</td>
+                        <td>RAM</td>
+                        <td>Disk Size</td>
+                        <td class="right-align">Price</td>
+                    </tr>
+                    <tr>
+                        <td><div class="az-pricing-core">A8</div></td>
+                        <td>8</td>
+                        <td>56 GB</td>
+                        <td>382 GB</td>
+                        <td class="right-align">$0.975/hr (~$725/mo)</td>
+                    </tr>
+                    <tr>
+                        <td><div class="az-pricing-core">A9</div></td>
+                        <td>16</td>
+                        <td>112 GB</td>
+                        <td>382 GB</td>
+                        <td class="right-align">$1.95/hr (~$1,451/mo)</td>
+                    </tr>  
+                </table>     
+                <br>
+                <h3>Compute Intensive</h3>
+                <div class="">
+                    The A10 and A11 virtual machines feature <em>Intel&reg; Xeon&reg; E5 processors</em>. These are ideal for high-performance clusters for modeling and simulations, video encoding, and other compute intensive scenarios. They are similar to A8 and A9 instance configuration without the Inifiband network and RDMA technology. These instances are available in select data centers. 
+                </div>
+                <table class="az-pricing-table">
+                    <tr class="az-pricing-table-headers">
+                        <td>Instance</td>
+                        <td>Cores</td>
+                        <td>RAM</td>
+                        <td>Disk Size</td>
+                        <td class="right-align">Price</td>
+                    </tr>
+                    <tr>
+                        <td><div class="az-pricing-core">A10</div></td>
+                        <td>8</td>
+                        <td>56 GB</td>
+                        <td>382 GB</td>
+                        <td class="right-align">$0.78/hr (~$580/mo)</td>
+                    </tr>
+                    <tr>
+                        <td><div class="az-pricing-core">A11</div></td>
+                        <td>16</td>
+                        <td>112 GB</td>
+                        <td>382 GB</td>
+                        <td class="right-align">$1.56/hr (~$1,161/mo)</td>
+                    </tr>  
+                </table>    
+                <br>
+                <a target="_blank" href="https://azure.microsoft.com/en-us/pricing/details/virtual-machines/#Linux"><div class="az-pricing-more">See more pricing options</div></a>
+                <br>
+                <div class="az-pricing-note" data-track="true" id="pricing-options">Prices do not include tax. Monthly price estimates are based on 744 hours of usage.</div>
+            </div>
+            
+            <br>
+            <br>
+            
+            <h2><strong>Partner and Ecosystem</strong></h2>
+            
+            <br>
+            
+            <div class="az-partner-logos">
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/d3view.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/dassultsystemes.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/esi.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/fujitsu.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/halliburton.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/intel.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/lstc.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/mellanoxtechnologies.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/mscsoftware.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/nodejs.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/openfoam.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/pbsworks.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/python.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/schlumberger.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/scsk.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/siemensplm.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/simulia.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/suse.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/ubercloud.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/univa.png"></div>
+            </div>
+            
+        </div>                   
+                    
+        <br>
+        <br> 
+                     
+        <div class="az-more-links-wrapper">
+            <br>
+            <div class="container">
+                <h3><strong> More links</strong></h3> <br>
+                <div class="az-more-links row">
+                    <div class="col-lg-6 col-md-6 col-xs-6">- &nbsp;<a target="_blank" href=""><span data-track="true" id="more-links-1">Altair RADIOSS now supported by Microsoft Azure</span></a></div>               
+                    <div class="col-lg-6 col-md-6 col-xs-6">- &nbsp;<a target="_blank" href=""><span data-track="true" id="more-links-2">Set up a Linux RDMA cluster to run MPI applications</span></a></div>
+                    <div class="col-lg-6 col-md-6 col-xs-6">- &nbsp;<a target="_blank" href=""><span data-track="true" id="more-links-3">Availability of Linux RDMA on Microsoft Azure</sppan></a></div>
+                    <div class="col-lg-6 col-md-6 col-xs-6">- &nbsp;<a target="_blank" href=""><span data-track="true" id="more-links-4">Intel Cloud Edition for Lustre* Architecture on Azure</span></a></div>
+                </div>
+            </div>
+            <br>
+            <br> 
+        </div>
+              
+    </body>
+    
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="js/index.js"></script>
+</html>
