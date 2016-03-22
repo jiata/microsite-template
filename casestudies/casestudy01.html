@@ -1,29 +1,60 @@
-<h2><div class="az-cs-header" id="cs-header"><strong>Running STAR-CCM+ on Azure Cloud</strong></div></h2>
 
-<em>"Excellent performance of the STAR-CCM+ container eliminates the need to have all software in-house. HPC on Azure provides the packaged software ready to go for faster analysis."</em>
-<br><br>
-<div class="row">
-    <div class="az-cs-image-wrapper col-lg-4 col-md-4 col-xs-4">
-        <img class="az-cs-image" src="images/starccm_image.png">
-    </div>
-    <div class="az-cs-image-wrapper col-lg-4 col-md-4 col-xs-4">
-        <img class="az-cs-image" src="images/starccm_image2.png">
-    </div>
-    <div class="az-cs-image-wrapper col-lg-4 col-md-4 col-xs-4">
-        <img class="az-cs-image" src="images/starccm_image3.png">
-    </div>
+<div class="az-cs-label"><span>CASE STUDIES</span> - MITSUBISHI UFJ</div>
+
+<h2><div class="az-cs-header" id="cs-header"><strong>Mitsubishi UFJ Does Risk Management At Scale</strong></div></h2>
+<br>
+<div class="az-cs-image-wrapper">
+    <img class="az-cs-image" src="images/mitsubishi-banner.png">
+    <div class="az-cs-image-text">“I can now manage <strong>750 machines in Azure</strong> on weekdays and a thousand on weekends. Plus an extra 300 production machines on-prem. <strong>And that’s all done by one person</strong>. ” <br><br>Robert Griffiths <br>MUFG Director</div>
 </div>
+
 <br>
 <div class="az-cs-description" id="cs-description">
-
-    <p>The intake manifold of an automotive engine is a critical system as it relates directly to the engine’s efficiency. When designing automotive engines, it is important to use flow analysis using CFD simulation software to achieve efficient designs and economical manifolds.</p>
+	<img style="height:60px;" src="images/mitsubishi-logo.png"><br><br>
+    <p>As trade volumes have increased and global financial markets have become even more interconnected, managing risk has become a top priority for banks and securities traders. This means they must perform more complex computations that require a larger volume of compute resources.</p>
     <br>
-    <p>To test this in the cloud, CAE Technology Inc ran a V6 intake manifold simulation on Microsoft Azure to experiment with performance. Using UberCloud Application Containers that ran STAR-CCM+ on a cluster of Microsoft Azure A9 instances, totaling 128 cores and 1TB of RAM, CAE Technology Inc ran the simulation for 10,000 iterations. The simulation was highly successful. The UberCloud container together with Azure compute instances produced high computational speed, taking 18708 seconds (5h 20m) to run 10,000 iterations.</p>
-    <br>
-    <p>CAE Technology Inc found that running on the 128 cores on Microsoft Azure was extremely fast compared to their in-house alternatives, and found the overall experience with Azure HPC Cluster to be intuitive and easy to use.</p>
+    <p>For many investment banks, asset managers, and trading firms, achieving new standards for compliance means investing millions of dollars in additional compute power and datacenter space. MUFJ, a member of MUFG, a global financial group, decided to go about it a little differently. “We have to be proactive,” says Robert K. Griffiths, the company's Head of High Performance Computing. "[We need to be] more nimble in terms of how we deliver risk and add value to the company.”</p>
+	<br>
+	<p>To compute its risk calculations, MUFG quantitative analysts needed to process more than 100 gigabytes of data in less than 12 hours every night, but as the firm grew, it was becoming prohibitively expensive to buy more licenses, more computers for its on-premises grid. So, MUFG decided to move its on-premises, high-performance computing (HPC) grids to Azure. <strong>Instead of buying hundreds of servers on its on-premises grid, they now uses the deployment, administration, job scheduling, and monitoring tools in Microsoft HPC Pack to offload its daily risk calculations to Azure.</strong> With a dramatic increase in computing power, and no increase in staffing, the company saves millions of dollars in servers and datacenter space. On Azure, MUFJ now has the ability to scale almost instantaneously following a market event.</p>
 </div>
 
-<!--
 <br>
-<a href=""><div class="az-cs-link">Read the full case-study</div></a>
--->
+<a href="https://customers.microsoft.com/Pages/CustomerStory.aspx?recid=26266" target="_blank"><div class="az-cs-link">Read the full case-study</div></a>
+<br>
+
+<style scoped>
+    
+.az-cs-label span {
+	color: dodgerblue
+}
+.az-cs-banner {
+	width: 100%;
+}
+.az-cs-image {
+	display: inline-block;
+	width: 100%;
+}
+.az-cs-image-wrapper {
+	height: 40vh;
+	min-height: 360px;
+	overflow: hidden;
+	position: relative;
+}
+.az-cs-link {
+	background-color:#00abec;
+	color: white;
+	float: right;
+	padding: 10px 20px;
+}
+.az-cs-image-text {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 40%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding: 20px;
+    font-size: 1.6em;
+}
+</style>

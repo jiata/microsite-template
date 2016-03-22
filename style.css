@@ -7,7 +7,7 @@ body {
 
 h1 {
 	font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
-	font-size: 4.8vw;
+	font-size: 4.2vw;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
@@ -38,11 +38,11 @@ h3 {
 		line-height: 50px;
 	}
 	h2 {
-		font-size: 22px;
-		line-height: 24px;
+		font-size: 24px;
+		line-height: 26px;
 	}
 	h3 {
-		font-size: 18px;
+		font-size: 24px;
 	}
 }
 @media (min-width: 1200px) { 
@@ -66,18 +66,61 @@ em {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
+  margin: 0px;
 }
 .width-constraint {
-	min-width: 800px;
+	min-width: 960px;
+}
+.max-width {
+	width: 100%;
+}
+.right {
+	text-align: right;
+}
+.center {
+	text-align: center;
 }
 
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+/* General */
 
 .az-nav {
 	position: absolute;
 	height: 60px;
 	background-color: black;
 	color: white;
-	width: 100vw;
+	width: 100%;
 	z-index: 100;
 	line-height: 60px;
 	min-width: 800px;
@@ -111,7 +154,7 @@ em {
 	left: 50%;
 	text-align: center;
 	width: 80%;
-	max-width: 800px;
+	max-width: 960px;
 	min-width: 400px;
 }
 .az-banner-start {
@@ -126,7 +169,7 @@ em {
 }
 
 .az-announcement {
-	background-color:#00abec;
+	background-color:dodgerblue;
 	height: 5vw;
 	line-height: 5vw;
 	color: white;
@@ -140,26 +183,188 @@ em {
 	vertical-align: middle;
 }
 
-.az-selling-points {
-	text-align: center;
+.az-diagram {
+	position: relative;
+	background-color: dodgerblue;
 }
+.az-diagram h2 {
+	color: white;
+}
+.az-diagram img {
+	border:4px solid white;
+}
+.az-diagram-label {
+	padding: 12px;
+	text-align: center;
+	background-color: white;
+	border-left: 2px solid dodgerblue;
+	position: relative;
+	border-top: 4px solid dodgerblue;
+	border-right: 2px solid dodgerblue;
+	color: #555;
+}
+.az-diagram-number {
+	background-color: #89c402;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	color: white;
+	font-weight: 500;
+	font-size: 1.0em;
+	left: 10px;
+	top: 10px;
+	border-top-right-radius: 50px;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
+.az-diagram-text {
+	font-size: 0.75em;
+	text-align: left;
+	margin-left: 16%;
+}
+.az-diagram-description-row {
+	margin-right: -2px;
+	margin-left: -2px;
+}
+.az-diagram-link {
+	width: 100%;
+	background-color: dodgerblue;
+	margin-top: 4px;
+	color: white;
+	padding: 4px;
+}
+.az-diagram-link a {
+	color: white;
+	text-decoration: underline;
+}
+
 .az-selling-points > h2 {
 	text-align: left;
 }
+.az-selling-point >h3 {
+	text-align: center;
+}
 .az-selling-point {
-	border: 1px solid #aaa;
 	padding: 36px;
 	font-size: 1.0em;
 }
 .az-selling-point-description {
 	text-align: left;
 	margin: 20px auto;
-	padding-left: 24px;
-	padding-right: 24px;
-	
 }
+.az-selling-point-image-wrapper {
+	border-radius: 80px;
+	width: 160px;
+	height: 160px;
+	border: 4px solid #222277;
+	margin: 0 auto;
+}
+.az-selling-point-image-wrapper img {
+	width: 100px;
+	height: 100px;
+	margin-left: 25px;
+	margin-top: 25px;
+}
+
+/* =====================================
+   Trust
+   ===================================== */
+.az-trust {
+	background-color: dodgerblue;
+	color: white;
+}
+.az-trust .container {
+	position: relative;
+}
+.az-trust img {
+	margin-left: 5%;
+}
+.az-trust-text {
+	transform: translateY(-50%);
+	top: 50%;
+	position: absolute;
+	right: 0px;
+	width: 60%;
+	margin-right: 5%;
+	font-size: 30px;
+	line-height: 34px;
+}
+.az-trust-subtext {
+	font-size: 18px;
+}
+@media (min-width: 1200px) {
+	.az-trust-text{
+		font-size: 36px;
+		line-height: 40px;
+	}
+} 
+.az-trust-text a {
+	color: white;
+	text-decoration: underline;
+}
+.az-compliance {
+	color: white;
+	background-color: #222277;
+	text-align: center;
+}
+
+/* =====================================
+	Azure Stack
+   ===================================== */
+.az-stack {
+	background-color: dodgerblue;
+	color: white;
+	background-image: url("../images/azure-stack.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	min-height: 420px;
+}
+.az-stack .container {
+	position: relative;
+	height: 400px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.az-stack img {
+	margin-left: 5%;
+}
+.az-stack-title {
+	font-size: 32px;
+	line-height: 36px;
+}
+.az-stack-text {
+	transform: translateY(-50%);
+	top: 50%;
+	position: absolute;
+	left: 15px;
+	width: 60%;
+	margin-right: 5%;
+	font-size: 18px;
+}
+@media (min-width: 1200px) {
+	.az-stack-title {
+		font-size: 40px;
+		line-height: 44px;
+	}
+	.az-stack-text{
+		font-size: 20px;
+		line-height: 24px;
+	}
+} 
+.az-stack-text a {
+	color: white;
+	text-decoration: underline;
+}
+.az-stack-button {
+	padding: 10px 20px;
+	background-color: white;
+	color: dodgerblue;
+	display: inline-block;
+}
+
 .az-case-study-wrapper {
-	background-color: #eeeeee;
+	background-color: white;
 }
 .az-case-study-seperator hr {
 	background-color: #aaa;
@@ -167,53 +372,34 @@ em {
 	border: 0px;
 }
 
-.az-cs-banner {
-	width: 100%;
-}
-.az-cs-image {
-	display: inline-block;
-	width: 100%;
-}
-.az-cs-image-wrapper {
-	height: 20vw;
-	min-height: 225px;
-	overflow: hidden;
-}
-.az-cs-link {
-	background-color:#00abec;
-	color: white;
-	float: right;
-	padding: 10px 20px;
-}
 
-#az-case-study-navigation {
-	width: 100%;
-	text-align: center;
-}
-.az-case-study-selector {
-	background-color: #ccc;
-	border-radius: 10px;
-	height: 10px;
-	width: 10px;
-	display: inline-block;
-	margin-left: 12px;
-	margin-right: 12px;
-	cursor: pointer;
-}
-.az-case-study-selector.active {
-	background-color: #888;
-}
-
+/* =====================================
+	Partners & Ecosystem 
+   ===================================== */
 .az-partner-logos {
 	display: flex;
 	flex-wrap: wrap;
 }
-.az-partner-logo {
-	border: 1px solid #ccc;
-}
 .az-partner-logo img {
 	width: 100%;
 	height: 100%;
+}
+
+
+/* =====================================
+   Compliance and Regulation 
+   ===================================== */
+.az-compliance-logos {
+	display: flex;
+	flex-wrap: wrap;
+}
+.az-compliance-logo img {
+	width: 100%;
+	height: 100%;
+}
+.az-compliance-text {
+	text-align: center;
+	font-size: 11px;
 }
 
 .az-applications.table, 
@@ -226,8 +412,40 @@ td {
 	padding: 12px;
 }
 
-.az-applications {
-	width: 100%;
+.az-services {
+	background-color: #efefef;
+}
+.az-services a {
+	display: block;
+}
+.az-service {
+	/*box-shadow: 2px 2px 5px #ddd;*/
+	border: 1px solid #ccc;
+	text-align: center;
+	padding: 20px;
+	margin: 10px;
+	color: #555;
+	text-decoration: none !important;
+}
+.az-service:hover {
+	background-color: white;
+}
+.az-service-name {
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+.az-service-image {
+	width: 90px;
+	height: 90px;
+	border-radius: 60px;
+	border:3px solid #006DD6;
+	line-height: 84px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.az-service-description {
+	text-align: left;
+	font-size: 14px;
 }
 
 .az-getting-started {
@@ -253,6 +471,10 @@ td {
 	color: white;
 	position: absolute;
 	bottom: 15px;
+}
+/*
+.az-applications {
+	width: 100%;
 }
 .az-more-links-wrapper {
 	background-color: #eeeeee;
@@ -298,6 +520,4 @@ td {
 .az-pricing-note {
 	color: #aaa
 }
-.right-align {
-	text-align: right;
-}
+*/
