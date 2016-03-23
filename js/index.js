@@ -1,5 +1,5 @@
 (function () {
-		
+
 	/* ========================
 	 * Navigation
 	 * ======================== */
@@ -7,6 +7,7 @@
 	$( ".az-nav-link" ).each( function() {
 		var id = $(this).attr( "data-id" );
 		$(this).click( function() {
+			console.log("id: " + id);
 			$( window ).scrollTop( $("#"+id).offset().top /* - 60 */ );
 		});
 	});
@@ -31,13 +32,14 @@
 
 	/* ========================
 	 * Tracking
-	 * ======================== */
+	 * ======================== 
 	 
 	$( "[data-track='true']").each( function() {
 		var name = $(this).attr('id');
 		$(this).click( function() {
 			appInsights.trackEvent(name);
 		});
-	});
+	});*/
+		
 	
 })();
