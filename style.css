@@ -237,6 +237,9 @@ em {
 	text-decoration: underline;
 }
 
+/* =====================================
+   IaaS Selling Points
+   ===================================== */
 .az-selling-points > h2 {
 	text-align: left;
 }
@@ -263,6 +266,57 @@ em {
 	height: 100px;
 	margin-left: 25px;
 	margin-top: 25px;
+}
+
+/* =====================================
+   Security
+   ===================================== */
+ 
+.az-security {
+ 	background-color: dodgerblue;
+	color: white;
+}  
+.az-security-title {
+	font-size: 30px;
+	line-height: 34px;
+}
+.az-security-title2 {
+	font-size: 22px;
+	line-height: 24px;
+}
+@media (min-width: 1200px) {
+	.az-security-title {
+		font-size: 36px;
+		line-height: 40px;
+	}
+} 
+.az-security-icon-wrapper {
+	border: 3px solid dodgerblue;
+	background-color: white;
+	/* border-bottom-right-radius: 50px; */
+	/* border-top-right-radius: 50px; */
+	width: 80px;
+	height: 80px;
+	line-height: 65px;
+	text-align: center;
+}
+.az-security-text-title {
+	font-size: 22px;
+	line-height: 22px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+.az-security-text-body {
+	font-size: 15px;
+}
+.az-security-text-body a {
+	color: white;
+	text-decoration: underline;
+}
+.az-security-center {
+	color: white;
+	background-color: #222277;
+	text-align: center;
 }
 
 /* =====================================
