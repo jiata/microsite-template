@@ -2,7 +2,7 @@ body {
  	padding: 0;
 	margin: 0;
 	font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
-	font-size: 1.2vw; 
+	font-size: 16px; 
 }
 
 h1 {
@@ -18,8 +18,8 @@ h2 {
 	font-size: 32px;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 400;
-	line-height: 32px;
+	font-weight: 300;
+	line-height: 36px;
 }
 h3 {
 	font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
@@ -29,7 +29,7 @@ h3 {
 	font-weight: 400;
 	line-height: 28px;
 }
-@media (max-width: 800px) {
+@media (max-width: 960px) {
 	body {
 		font-size: 14px;
 	}
@@ -277,7 +277,11 @@ em {
 .az-grid {
 	background-color: #eee;
 }   
-.az-grid-images {
+.az-grid-content.lhs {
+	margin-left: 60px
+}
+.az-grid-content.rhs {
+	margin-right: 60px
 }
 .az-grid-content {
 	background-color: white;
@@ -285,6 +289,17 @@ em {
 	padding: 24px;
 	height: 100%;
 	text-align: center;
+}
+@media (max-width: 1200px) {
+	.az-grid-content.lhs {
+		margin-left: 20px
+	}
+	.az-grid-content.rhs {
+		margin-right: 20px
+	}
+	.az-grid-image {
+		width: 100% !important;
+	}
 }
 .az-grid-description {
 	padding-left: 24px;
@@ -526,14 +541,16 @@ em {
 	background-color: #333;
 	color: White;
 }
+.az-getting-started-tab-wrapper {
+	background-color: #333;
+}
 .az-getting-started-tab {
 	background-color: white;
 	color: #555;
 	position: relative;
 	height: 240px;
-	padding: 0px;
 	display: block;
-	margin: 12px;
+	margin-bottom: 30px;
 }
 .az-getting-started-header {
 	font-size: 18px;

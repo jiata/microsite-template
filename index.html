@@ -94,8 +94,8 @@
                     </div>
                     <h3>Hybrid</h3>
                     <div class="az-selling-point-description">Not only do we provide hybrid connectivity (<!--
-                        --><a href="" target="_blank">VPN</a> +
-                        <a href="" target="_blank">Express Route</a>), we've also built mature hybrid solutions for cloud management, identity, storage, and many more, making us the most comprehensive
+                        --><a href="https://azure.microsoft.com/en-us/services/virtual-network/" target="_blank">VPN</a> +
+                        <a href="https://azure.microsoft.com/en-us/services/expressroute/" target="_blank">Express Route</a>), we've also built mature hybrid solutions for cloud management, identity, storage, and many more, making us the most comprehensive
                         hybrid cloud today.</div>
                 </div>
                 <div class="az-selling-point col-md-4 col-xs-4">
@@ -104,8 +104,7 @@
                     </div>
                     <h3>Trustworthy</h3>
                     <div class="az-selling-point-description">Azure meets a broad set of international and industry-specific
-                        <a href="https://www.microsoft.com/en-us/TrustCenter/Compliance/default.aspx"
-                        target="_blank">compliance standards</a>, but that's just the beginning. Security and privacy are embedded at every step, from development through incident response.</div>
+                        <a href="/#compliance">compliance standards</a>, but that's just the beginning. Security and privacy are embedded at every step, from development through incident response.</div>
                 </div>
             </div>
         </div>
@@ -121,22 +120,23 @@
                 <br>
                 <div class="az-grid-images row">
                     <div class="col-md-6 col-xs-6">
-                        <div class="az-grid-content" style="margin-left: 80px;">
-                            <img src="images/iaas-cluster1.png">
+                        <div class="az-grid-content lhs">
+                            <img class="az-grid-image" src="images/iaas-cluster1.png">
                             <h3>Cloud Native</h3>
                             <br>
                             <div class="az-grid-description left">Deploy your applications on Windows or Linux infrastructure as a service (IaaS) virtual machines. Make use of your own custom images, and run HPC workloads using the job scheduling solution of your choice.</div>
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-6">
-                        <div class="az-grid-content" style="margin-right: 80px;">
-                            <img src="images/iaas-cluster2.png">
+                        <div class="az-grid-content rhs">
+                            <img class="az-grid-image" src="images/iaas-cluster2.png">
                             <h3>Hybrid Cloud</h3>
                             <br>
                             <div class="az-grid-description left">Scale-out your on-premises HPC or grid computing solution to Azure and save on infrastructure costs. Our hybrid solution lets you increase capacity on your existing HCP cluster, so that you get the resources only when you need it.</div>
                         </div>
                     </div>
-                </div>  
+                </div> 
+                <br>
                 <br>
                 <br>
             </div>
@@ -144,10 +144,10 @@
         <div class="az-clustering">
             <br>
             <div class="container">
-                <div style="margin: 0px 120px;">
+                <div style="margin: 0px 100px;">
                     <h3 class="">Use the Clustering and Scheduling Tools That You Already Know</h3>
                     <br>
-                    <div>Not only can you run <a href="" target="_blank"><strong>Microsoft HPC Pack</strong></a>, but you can also build Linux clusters to run open-source tools such as <a href="" target="_blank"><strong>Torque</strong></a> and <a href="" target="_blank"><strong>SLURM</strong></a>. We also support commercial tools such as <a href="" target="_blank"><strong>TIBCO DataSynapse GridServer</strong></a> and <a href="" target="_blank"><strong>Univa Grid Engine</strong></a> in Azure.</div>
+                    <div>Not only can you run <a href="https://technet.microsoft.com/library/cc514029" target="_blank"><strong>Microsoft HPC Pack</strong></a>, but you can also build Linux clusters to run open-source tools such as <a href="https://github.com/Azure/azure-quickstart-templates/tree/master/torque-cluster" target="_blank"><strong>Torque</strong></a> and <a href="https://github.com/Azure/azure-quickstart-templates/tree/master/slurm" target="_blank"><strong>SLURM</strong></a>. We also support commercial tools such as <a href="http://www.tibco.com/products/automation/application-development/grid-computing/gridserver" target="_blank"><strong>TIBCO DataSynapse GridServer</strong></a> and <a href="http://www.univa.com/products/grid-engine" target="_blank"><strong>Univa Grid Engine</strong></a> in Azure.</div>
                 </div>
             </div>
             <br>
@@ -578,42 +578,61 @@
             <div class="container width-constraint">
                 <h2 class="center">Getting Started</h2>
                 <br>
-                <div class="row">
+                <div class="row-fluid">
                     <a href="https://azure.microsoft.com/en-us/documentation/articles/cloud-services-setup-hybrid-hpcpack-cluster/" target="_blank"
-                    class="az-getting-started-tab col-md-3 col-xs-3">
-                        <div class="az-getting-started-header">Create a hybrid cluster with HPC Pack and on-demand Azure instances</div>
-                        <div class="az-getting-started-description">Use HPC Pack 2012 R2 and Azure to set up a hybrid HPC cluster, which consists of an on-premises head node (running HPC Pack) and on-demand a Azure cloud service nodes.</div>
+                    class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4">
+                        <div class="az-getting-started-tab">
+                            <div class="az-getting-started-header">Create a hybrid cluster with HPC Pack and Azure instances</div>
+                            <div class="az-getting-started-description">Use HPC Pack 2012 R2 and Azure to set up a hybrid HPC cluster, which consists of an on-premises head node (running HPC Pack) and on-demand a Azure cloud service nodes.</div>
+                        </div>
                     </a>
-                    <a href="https://azure.microsoft.com/en-us/documentation/articles/batch-dotnet-get-started/" target="_blank" class="az-getting-started-tab col-md-3 col-xs-3">
-                        <div class="az-getting-started-header">Get started with the Azure Batch library for .NET</div>
-                        <div class="az-getting-started-description">Learn the basics of Azure Batch and the Batch .NET library in this article as we discuss a C# sample application step by step.</div>
+                    <a href="https://azure.microsoft.com/en-us/documentation/articles/batch-dotnet-get-started/" target="_blank" 
+                    class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4">
+                        <div class="az-getting-started-tab">
+                            <div class="az-getting-started-header">Get started with the Azure Batch library for .NET</div>
+                            <div class="az-getting-started-description">Learn the basics of Azure Batch and the Batch .NET library in this article as we discuss a C# sample application step by step.</div>
+                        </div>
                     </a>
-                    <a href="https://github.com/Azure/azure-quickstart-templates/tree/master/101-vm-from-user-image" target="_blank" class="az-getting-started-tab col-md-3 col-xs-3">
-                        <div class="az-getting-started-header">Create a Virtual Machine from a User Image using Templates</div>
-                        <div class="az-getting-started-description">This template allows you to create a Virtual Machines from a User image. This template also deploys a Virtual Network, Public IP addresses and a Network Interface.</div>
+                    <a href="https://github.com/Azure/azure-quickstart-templates/tree/master/101-vm-from-user-image" target="_blank" 
+                    class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4">
+                        <div class="az-getting-started-tab">
+                            <div class="az-getting-started-header">Create a Virtual Machine from a User Image using Templates</div>
+                            <div class="az-getting-started-description">This template allows you to create a Virtual Machines from a User image. This template also deploys a Virtual Network, Public IP addresses and a Network Interface.</div>
+                        </div>
                     </a>
-                    <a href="https://technet.microsoft.com/en-us/library/mt612877.aspx" target="_blank" class="az-getting-started-tab col-md-3 col-xs-3">
-                        <div class="az-getting-started-header">Burst to Azure Batch with Microsoft HPC Pack</div>
-                        <div class="az-getting-started-description">Extend your HPC Pack cluster to include Azure Batch pools as compute resources. Using these Azure Batch pools, you can increase (“burst”) the capacity of your HPC cluster on-demand.</div>
+                    <a href="https://technet.microsoft.com/en-us/library/mt612877.aspx" target="_blank" 
+                    class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4">
+                        <div class="az-getting-started-tab">
+                            <div class="az-getting-started-header">Burst to Azure Batch with Microsoft HPC Pack</div>
+                            <div class="az-getting-started-description">Extend your HPC Pack cluster to use Azure Batch as compute resources. Using these Azure Batch pools, you can increase (“burst”) the capacity of your HPC cluster on-demand.</div>
+                        </div>
                     </a>
-                </div>
-                <div class="row">
                     <a href="https://azure.microsoft.com/en-us/documentation/articles/resource-manager-template-walkthrough/" target="_blank"
-                    class="az-getting-started-tab col-md-3 col-xs-3">
-                        <div class="az-getting-started-header">Deploy with Azure Resource Manager Templates</div>
-                        <div class="az-getting-started-description">Use a template to deploy 2 VMs with unique NIC and IP Addresses, a storage account, and a load balancer, in the same subnet on a virtual network.</div>
+                    class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4">
+                        <div class="az-getting-started-tab">
+                            <div class="az-getting-started-header">Deploy with Azure Resource Manager Templates</div>
+                            <div class="az-getting-started-description">Use a template to deploy 2 VMs with unique NIC and IP Addresses, a storage account, and a load balancer, in the same subnet on a virtual network.</div>
+                        </div>
                     </a>
-                    <a href="" target="_blank" class="az-getting-started-tab col-md-3 col-xs-3">
-                        <div class="az-getting-started-header">\\Tutorial or relevant pages\\</div>
-                        <div class="az-getting-started-description">\\Description of Tutorial or relevant pages\\</div>
+                    <a href="https://azure.microsoft.com/en-us/documentation/templates/create-hpc-cluster-linux-cn/" target="_blank" 
+                    class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4">
+                        <div class="az-getting-started-tab">
+                            <div class="az-getting-started-header">Create an HPC Cluster with Linux Compute Nodes</div>
+                            <div class="az-getting-started-description">Use a template to create an HPC cluster with Linux compute nodes.</div>
+                        </div>      
                     </a>
-                    <a href="" target="_blank" class="az-getting-started-tab col-md-3 col-xs-3">
-                        <div class="az-getting-started-header">\\Tutorial or relevant pages\\</div>
-                        <div class="az-getting-started-description">\\Description of Tutorial or relevant pages\\</div>
+                    <a href="https://azure.microsoft.com/en-us/documentation/templates/create-hpc-cluster/" target="_blank" 
+                    class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4">
+                        <div class="az-getting-started-tab">
+                            <div class="az-getting-started-header">Create an HPC Cluster with Windows Compute Nodes</div>
+                            <div class="az-getting-started-description">Use a template to create an HPC cluster with the latest version of HPC Pack 2012 R2.</div>
+                        </div>
                     </a>
-                    <a href="" target="_blank" class="az-getting-started-tab col-md-3 col-xs-3">
-                        <div class="az-getting-started-header">\\Tutorial or relevant pages\\</div>
-                        <div class="az-getting-started-description">\\Description of Tutorial or relevant pages\\</div>
+                    <a href="https://azure.microsoft.com/en-us/documentation/templates/slurm/" target="_blank" class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4">
+                        <div class="az-getting-started-tab">
+                            <div class="az-getting-started-header">Deploy a Slurm Cluster using a Template</div>
+                            <div class="az-getting-started-description">In just a few clicks, this template will help you to spin up a slurm cluster.</div>
+                        </div>
                     </a>
                 </div>
             </div>
