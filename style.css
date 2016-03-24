@@ -53,7 +53,6 @@ h3 {
 }
 strong {
 	font-weight: 600;
-	font-size: 1.1em;
 }
 a {
 	text-decoration: none;
@@ -79,6 +78,9 @@ em {
 }
 .center {
 	text-align: center;
+}
+.left {
+	text-align: left;
 }
 
 .col-xs-5ths,
@@ -269,6 +271,31 @@ em {
 }
 
 /* =====================================
+   Grid
+   ===================================== */
+
+.az-grid {
+	background-color: #eee;
+}   
+.az-grid-images {
+}
+.az-grid-content {
+	background-color: white;
+	margin: 0 16px;
+	padding: 24px;
+	height: 100%;
+	text-align: center;
+}
+.az-grid-description {
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-bottom: 24px;
+}
+.az-clustering {
+	background-color: #333;
+	color: white;
+}
+/* =====================================
    Security
    ===================================== */
  
@@ -293,11 +320,9 @@ em {
 .az-security-icon-wrapper {
 	border: 3px solid dodgerblue;
 	background-color: white;
-	/* border-bottom-right-radius: 50px; */
-	/* border-top-right-radius: 50px; */
 	width: 80px;
 	height: 80px;
-	line-height: 65px;
+	line-height: 60px;
 	text-align: center;
 }
 .az-security-text-title {
