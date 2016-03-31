@@ -115,8 +115,9 @@ em {
     }
 }
 
-/* General */
-
+/* =====================================
+   Nav
+   ===================================== */
 .az-nav {
 	position: absolute;
 	height: 60px;
@@ -141,6 +142,9 @@ em {
 	cursor: pointer;
 }
 
+/* =====================================
+   Banner
+   ===================================== */
 .az-banner {
 	position: relative;
 }
@@ -181,6 +185,21 @@ em {
 }
 
 /* =====================================
+   why cloud
+   ===================================== */
+.az-why-cloud {
+	background-color: dodgerblue;
+	color: white;
+}
+.az-why-cloud-reason-container {
+	text-align: center;
+}
+.az-why-cloud-description {
+	margin: 20px 60px;
+	text-align: left;
+}
+
+/* =====================================
    Diagram
    ===================================== */
 .az-diagram {
@@ -188,6 +207,9 @@ em {
 	background-color: dodgerblue;
 }
 .az-diagram h2 {
+	color: white;
+}
+.az-diagram-subtitle {
 	color: white;
 }
 .az-diagram img {
@@ -353,7 +375,7 @@ em {
 	color: white;
 	text-decoration: underline;
 }
-.az-security-center {
+.az-security-package {
 	color: white;
 	background-color: #222277;
 	text-align: center;
@@ -544,13 +566,19 @@ em {
 .az-getting-started-tab-wrapper {
 	background-color: #333;
 }
+.az-getting-started-tab-wrapper:hover {
+	text-decoration: none !important;
+}
 .az-getting-started-tab {
-	background-color: white;
+	background-color: #eee;
 	color: #555;
 	position: relative;
 	height: 240px;
 	display: block;
 	margin-bottom: 30px;
+}
+.az-getting-started-tab-wrapper:hover .az-getting-started-tab {
+	background-color: white;
 }
 .az-getting-started-header {
 	font-size: 18px;
@@ -559,6 +587,9 @@ em {
 	background-color: dodgerblue;
 	color: white;
 	padding: 20px;
+}
+.az-getting-started-tab-wrapper:hover .az-getting-started-header {
+	background-color: #399eff;
 }
 .az-getting-started-tab:hover .az-getting-started-header {
 	text-decoration: none;
@@ -578,53 +609,3 @@ em {
 	width: 100%;
 	display: block;
 }
-
-/*
-.az-applications {
-	width: 100%;
-}
-.az-more-links-wrapper {
-	background-color: #eeeeee;
-}
-.az-more-links {
-	display: inherit;
-}
-.az-more-links div {
-	margin-bottom: 12px;
-}
-.az-more-links a{
-	text-decoration: underline;
-}
-.az-pricing-table {
-	width: 100%;
-	margin: 24px auto;
-}
-.az-pricing-table,
-.az-pricing-table tr,
-.az-pricing-table td {
-	border-bottom: 1px solid #ccc;
-}
-.az-pricing-table-headers {
-	font-weight: 600;
-	border-top: 1px solid #ccc;
-}
-.az-pricing-core {
-	background-color: #89c402;
-	color: white;
-	padding: 6px 12px;
-	width: 60px;
-	font-weight: 600;
-	text-align: center;
-}
-.az-pricing-more {
-	float: right;
-	background-color: #89c402;
-	color: white;
-	padding: 10px 20px;
-	font-weight: 600;
-	text-align: center;
-}
-.az-pricing-note {
-	color: #aaa
-}
-*/
