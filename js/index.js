@@ -14,39 +14,19 @@
 	/* ========================
 	 * Case Study Manager
 	 * ======================== */
-	 
-	var caseStudyPointer = 0;
+	
 	var caseStudiesPwd = [
 		"../casestudies/casestudy01.html",
 		"../casestudies/casestudy02.html"
 	];
-	
-	function changeCaseStudy(i) {
-		caseStudyPointer = i;
-		$("#az-case-study").load(caseStudiesPwd[i]);
-	}
-	changeCaseStudy(0);
-	
-	function setSelector(el) {
-		$(".az-case-study-selector").each( function() {
-			$(this).removeClass("active");
-		});
-		el.addClass("active");
-	}
 
-	var caseStudyNavWrapper = $("#az-case-study-navigation");
 	$.each( caseStudiesPwd, function( i, p ) {
-		var selector = $("<div class='az-case-study-selector'></div>");
-		if (i == caseStudyPointer) {
-			selector.addClass("active");
+		var caseStudy = $("<div/>");
+		caseStudy.load(caseStudiesPwd[i]);
+		$("#az-case-study").append(caseStudy);
+		if (i != caseStudiesPwd.length-1) {
+			$("#az-case-study").append("<br><hr><br>");
 		}
-		
-		selector.click(function () {
-			changeCaseStudy(i);
-			setSelector($(this));
-		});
-		
-		caseStudyNavWrapper.append(selector);
 	});
 	
 	/* ========================
