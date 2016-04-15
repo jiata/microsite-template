@@ -62,11 +62,11 @@
             <div class="container">
                 <a target="_blank" href="https://www.azure.com"><div class="az-nav-logo" data-track="true" id="azure-home-page">Microsoft Azure</div></a>
                 <div class="az-nav-right">
-                    <div class="az-nav-link" data-id="nav-why-azure" data-track="true">Why Azure</div>
-                    <div class="az-nav-link" data-id="nav-compliance" data-track="true">Security</div>
-                    <div class="az-nav-link" data-id="nav-architect" data-track="true"">Architecture</div>
-                    <div class="az-nav-link" data-id="nav-partners" data-track="true">Partners</div>
-                    <div class="az-nav-link" data-id="nav-getting-started" data-track="true">Getting Started</div>
+                    <div class="az-nav-link" id="nav-why-azure" data-track="true">Why Azure</div>
+                    <div class="az-nav-link" id="nav-compliance" data-track="true">Security</div>
+                    <div class="az-nav-link" id="nav-architect" data-track="true"">Architecture</div>
+                    <div class="az-nav-link" id="nav-partners" data-track="true">Partners</div>
+                    <div class="az-nav-link" id="nav-getting-started" data-track="true">Getting Started</div>
                     <a target="_blank" href="mailto:bigcompute@microsoft.com"><div class="az-nav-link" data-track="true" id="nav-contact">Contact Us</div></a>
                 </div>
             </div>
@@ -111,8 +111,8 @@
                     </div>
                     <h3>Hybrid</h3>
                     <div class="az-selling-point-description">We provide secure connectivity (<!--
-                        --><a href="https://azure.microsoft.com/en-us/services/virtual-network/" target="_blank" data-track="true" data-id="why-azure-vpn-link">VPN</a> +
-                        <a href="https://azure.microsoft.com/en-us/services/expressroute/" target="_blank" data-track="true" data-id="why-azure-express-route-link">Express Route</a>) for hybrid solutions within cloud management, identity, storage, and many more, making us the most flexible
+                        --><a href="https://azure.microsoft.com/en-us/services/virtual-network/" target="_blank" data-track="true" id="why-azure-vpn-link">VPN</a> +
+                        <a href="https://azure.microsoft.com/en-us/services/expressroute/" target="_blank" data-track="true" id="why-azure-express-route-link">Express Route</a>) for hybrid solutions within cloud management, identity, storage, and many more, making us the most flexible
                         cloud today.</div>
                 </div>
                 <div class="az-selling-point col-md-4 col-xs-4">
@@ -121,7 +121,7 @@
                     </div>
                     <h3>Trustworthy</h3>
                     <div class="az-selling-point-description">Azure meets a broad set of international and national
-                        <a href="/#compliance" target="_blank" data-track="true" data-id="why-azure-compliance-standards-link">compliance standards</a> and embeds security and privacy at every step, from development through to incident response.</div>
+                        <a href="/#compliance" target="_blank" data-track="true" id="why-azure-compliance-standards-link">compliance standards</a> and embeds security and privacy at every step, from development through to incident response.</div>
                 </div>
             </div>
         </div>
@@ -168,19 +168,19 @@
                     <br>
                     <div class="">Use commercial tools such as
                         <a href="http://www.tibco.com/products/automation/application-development/grid-computing/gridserver"
-                        target="_blank" data-track="true" data-id="clustering-scheduling-hpc-pack"><strong>TIBCO DataSynapse GridServer</strong></a>
+                        target="_blank" data-track="true" id="clustering-scheduling-hpc-pack"><strong>TIBCO DataSynapse GridServer</strong></a>
                         and
                         <a href="http://www.univa.com/products/grid-engine" 
-                        target="_blank" data-track="true" data-id="clustering-scheduling-univa"><strong>Univa Grid Engine</strong></a>
+                        target="_blank" data-track="true" id="clustering-scheduling-univa"><strong>Univa Grid Engine</strong></a>
                         in Azure. You can also build out your own Windows or Linux clusters to run tools such as
                         <a href="https://github.com/Azure/azure-quickstart-templates/tree/master/torque-cluster"
-                        target="_blank" data-track="true" data-id="clustering-scheduling-torque"><strong>Torque</strong></a>
+                        target="_blank" data-track="true" id="clustering-scheduling-torque"><strong>Torque</strong></a>
                         and
                         <a href="https://github.com/Azure/azure-quickstart-templates/tree/master/slurm" 
-                        target="_blank"  data-track="true" data-id="clustering-scheduling-slurm"><strong>SLURM</strong></a>.
+                        target="_blank"  data-track="true" id="clustering-scheduling-slurm"><strong>SLURM</strong></a>.
                         Of course, we also support 
                         <a href="https://azure.microsoft.com/documentation/articles/virtual-machines-windows-hpcpack-cluster-options/"
-                        target="_blank" data-track="true" data-id="clustering-scheduling-HPC-pack"><strong>Microsoft HPC Pack</strong></a>, 
+                        target="_blank" data-track="true" id="clustering-scheduling-HPC-pack"><strong>Microsoft HPC Pack</strong></a>, 
                         Microsoft's free compute cluster solution for Windows and Linux HPC workloads.
                     </div>
                 </div>
@@ -238,7 +238,7 @@
                             <div class="az-security-icon-wrapper"><img src="images/services/virtual-network.png"></div>
                             <div class="az-security-text-title">Azure Virtual Networks</div>
                             <div class="az-security-text-body">
-                                <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-networks-overview/" target="_blank" data-track="true" data-id="security-virtual-networks-link">Get started with Virtual Networks</a>
+                                <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-networks-overview/" target="_blank" data-track="true" id="security-virtual-networks-link">Get started with Virtual Networks</a>
                                 <br>
                                 <hr>
                                 Keep your networks secure from the public and other machines in the cloud using Virtual Networks. Each Virtual Network is isolated from other Virtual Networks so that your data remains private. 
@@ -248,7 +248,7 @@
                             <div class="az-security-icon-wrapper"><img src="images/services/express-route.png"></div>
                             <div class="az-security-text-title">VPN + Express Route</div>
                             <div class="az-security-text-body">
-                                <a href="https://azure.microsoft.com/en-us/documentation/articles/expressroute-introduction/" target="_blank" data-track="true" data-id="security-express-route-link">Get started with Express Route</a>
+                                <a href="https://azure.microsoft.com/en-us/documentation/articles/expressroute-introduction/" target="_blank" data-track="true" id="security-express-route-link">Get started with Express Route</a>
                                 <br>
                                 <hr>
                                 Enable a connection from your datacenters to Azure Virtual Networks using Site-to-Site and Point-to-Site VPNs. For even better performance, you can use ExpressRoute, a private connection that keeps your traffic off the Internet.
@@ -267,7 +267,7 @@
             <div class="container">Download our
                 <strong>Security and Compliance package</strong> for more in-depth documentation 
                 <a href="Security-Compliance-Package.zip"
-                target="_blank" data-track="true" data-id="azure-security-package-download" download>here</a>.</div>
+                target="_blank" data-track="true" id="azure-security-package-download" download>here</a>.</div>
             <br>
         </div>
         <br>
@@ -275,7 +275,7 @@
         <!-- Compliance -->
         <div class="container width-constraint" id="compliance">
             <h2>Compliance Portfolio</h2>
-            <div>Azure Compliance makes it easier for first parties and end customers to fulfill their compliance obligations. See the full list <a href="https://www.microsoft.com/en-us/trustcenter/Compliance" target="_blank" data-track="true" data-id="compliance-link">here</a>.</div>
+            <div>Azure Compliance makes it easier for first parties and end customers to fulfill their compliance obligations. See the full list <a href="https://www.microsoft.com/en-us/trustcenter/Compliance" target="_blank" data-track="true" id="compliance-link">here</a>.</div>
             <br>
             <br>
             <div class="az-compliance-logos">
@@ -285,68 +285,56 @@
                         <div class="az-compliance-text">ISO 27001</div>
                     </div>
                     <div class="az-compliance-logo col-md-4 col-xs-4">
-                        <img src="images/compliance/SOC-1-Type-2.png">
-                        <div class="az-compliance-text">SOC 1 Type 2</div>
+                        <img src="images/compliance/ISO-27018.png">
+                        <div class="az-compliance-text">ISO 27018</div>
                     </div>
                     <div class="az-compliance-logo col-md-4 col-xs-4">
-                        <img src="images/compliance/SOC-2-Type-2.png">
-                        <div class="az-compliance-text">SOC 2 Type 2</div>
+                        <img src="images/compliance/SOC-1-Type-2.png">
+                        <div class="az-compliance-text">SOC 1</div>
                     </div>
+
                 </div>
                 <div class="col-md-6 col-xs-6" style="padding:0px;">
+                    <div class="az-compliance-logo col-md-4 col-xs-4">
+                        <img src="images/compliance/SOC-2-Type-2.png">
+                        <div class="az-compliance-text">SOC 2</div>
+                    </div>
+                    <div class="az-compliance-logo col-md-4 col-xs-4">
+                        <img src="images/compliance/SOC-3-Type-2.png">
+                        <div class="az-compliance-text">SOC 3</div>
+                    </div>
                     <div class="az-compliance-logo col-md-4 col-xs-4">
                         <img src="images/compliance/PCI-DSS-Level-1.png">
                         <div class="az-compliance-text">PCI DSS Level 1</div>
                     </div>                    
+
+                </div>
+                <div class="col-md-6 col-xs-6" style="padding:0px;">
+                    <div class="az-compliance-logo col-md-4 col-xs-4">
+                        <img src="images/compliance/FedRAMP-JAB-P-ATO.png">
+                        <div class="az-compliance-text">FedRAMP Moderate</div>
+                    </div>
+                    <div class="az-compliance-logo col-md-4 col-xs-4">
+                        <img src="images/compliance/FIPS-140-2.png">
+                        <div class="az-compliance-text">FIPS 140-2</div>
+                    </div>  
                     <div class="az-compliance-logo col-md-4 col-xs-4">
                         <img src="images/compliance/Cloud-Controls-Matrix.png">
                         <div class="az-compliance-text">Cloud Controls Matrix</div>
                     </div>
-                    <div class="az-compliance-logo col-md-4 col-xs-4">
-                        <img src="images/compliance/ISO-27018.png">
-                        <div class="az-compliance-text">ISO 27018</div>
-                    </div>
                 </div>
                 <div class="col-md-6 col-xs-6" style="padding:0px;">
+                    <div class="az-compliance-logo col-md-4 col-xs-4">
+                        <img src="images/compliance/European-Union-Model-Clauses.png">
+                        <div class="az-compliance-text">European Union Model Clauses</div>
+                    </div>
                     <div class="az-compliance-logo col-md-4 col-xs-4">
                         <img src="images/compliance/Shared-Assessments.png">
                         <div class="az-compliance-text">Shared Assessments</div>
                     </div>
                     <div class="az-compliance-logo col-md-4 col-xs-4">
-                        <img src="images/compliance/FIPS-140-2.png">
-                        <div class="az-compliance-text">FIPS 140-2</div>
-                    </div>                    
-                    <div class="az-compliance-logo col-md-4 col-xs-4">
-                        <img src="images/compliance/European-Union-Model-Clauses.png">
-                        <div class="az-compliance-text">European Union Model Clauses</div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xs-6" style="padding:0px;">
-                    <div class="az-compliance-logo col-md-4 col-xs-4">
-                        <img src="images/compliance/FedRAMP-JAB-P-ATO.png">
-                        <div class="az-compliance-text">FedRAMP JAB P-ATO</div>
-                    </div>
-                    <div class="az-compliance-logo col-md-4 col-xs-4">
-                        <img src="images/compliance/China-Multi-Layer-Protection-Scheme.png">
-                        <div class="az-compliance-text">China Multi Layer Protection Scheme</div>
-                    </div>
-                    <div class="az-compliance-logo col-md-4 col-xs-4">
                         <img src="images/compliance/ENISA-IAF.png">
                         <div class="az-compliance-text">ENISA-IAF</div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xs-6" style="padding:0px;">
-                     <div class="az-compliance-logo col-md-4 col-xs-4">
-                        <img src="images/compliance/China-CCCPPF.png">
-                        <div class="az-compliance-text">China CCCPPF</div>
-                    </div>
-                    <div class="az-compliance-logo col-md-4 col-xs-4">
-                        <img src="images/compliance/Singapore-MTCS-Level-3.png">
-                        <div class="az-compliance-text">Singapore MTCS Level 3</div>
-                    </div>
-                    <div class="az-compliance-logo col-md-4 col-xs-4">
-                        <img src="images/compliance/Australian-Signals-Directorate.png">
-                        <div class="az-compliance-text">Australian Signals Directorate</div>
                     </div>
                 </div>
                 <div class="col-md-6 col-xs-6" style="padding:0px;">
@@ -369,7 +357,7 @@
                 <img src="/images/compliance.png">
                 <div class="az-trust-text right">Learn more about Security, Privacy,&nbsp;Transparency&nbsp;and&nbsp;Compliance on&nbsp;the
                     <a href="https://www.microsoft.com/en-us/TrustCenter/Security/AzureSecurity"
-                    target="_blank" data-track="true" data-id="compliance-trust-center-link">Microsoft&nbsp;Azure&nbsp;Trust&nbsp;Center</a>
+                    target="_blank" data-track="true" id="compliance-trust-center-link">Microsoft&nbsp;Azure&nbsp;Trust&nbsp;Center</a>
                     <div class="az-trust-subtext">See our Azure Compliance portfolio <a href="#compliance">above</a></div>
                 </div>
             </div>
@@ -476,41 +464,41 @@
                             <div class="az-diagram-number">1</div>
                         </div>
                         <div class="az-diagram-text">Use
-                            <a href="https://azure.microsoft.com/en-us/services/data-factory/" target="_blank" data-track="true" data-id="azure-data-factory"><strong>Azure Data Factory</strong></a> to collect financial data from disparate on-premises data sources into
-                            <a href="https://azure.microsoft.com/en-us/services/storage/" target="_blank" data-track="true" data-id="azure-storage"><strong>Azure Storage</strong></a> or
-                            <a href="https://azure.microsoft.com/en-us/services/sql-database/" target="_blank" data-track="true" data-id="azure-sql-database"><strong>Azure SQL Database</strong></a>.</div>
+                            <a href="https://azure.microsoft.com/en-us/services/data-factory/" target="_blank" data-track="true" id="azure-data-factory"><strong>Azure Data Factory</strong></a> to collect financial data from disparate on-premises data sources into
+                            <a href="https://azure.microsoft.com/en-us/services/storage/" target="_blank" data-track="true" id="azure-storage"><strong>Azure Storage</strong></a> or
+                            <a href="https://azure.microsoft.com/en-us/services/sql-database/" target="_blank" data-track="true" id="azure-sql-database"><strong>Azure SQL Database</strong></a>.</div>
                     </div>
                     <div class="az-diagram-label col-xs-5ths col-sm-5ths col-md-5ths col-lg-5ths">
                         <div class="">
                             <div class="az-diagram-number">2</div>
                         </div>
                         <div class="az-diagram-text">Connect to commercial data sources using
-                            <a href="https://azure.microsoft.com/en-us/services/data-factory/" target="_blank" data-track="true" data-id="azure-data-factory"><strong>Azure Data Factory</strong></a> and ingest the data into
-                            <a href="https://azure.microsoft.com/en-us/services/storage/" target="_blank" data-track="true" data-id="azure-storage"><strong>Azure Storage</strong></a>.</div>
+                            <a href="https://azure.microsoft.com/en-us/services/data-factory/" target="_blank" data-track="true" id="azure-data-factory"><strong>Azure Data Factory</strong></a> and ingest the data into
+                            <a href="https://azure.microsoft.com/en-us/services/storage/" target="_blank" data-track="true" id="azure-storage"><strong>Azure Storage</strong></a>.</div>
                     </div>
                     <div class="az-diagram-label col-xs-5ths col-sm-5ths col-md-5ths col-lg-5ths">
                         <div class="">
                             <div class="az-diagram-number">3</div>
                         </div>
                         <div class="az-diagram-text">Deploy a cluster completely on the cloud with
-                            <a href="https://technet.microsoft.com/en-us/library/cc514029.aspx" target="_blank" data-track="true" data-id="hpc-pack"><strong>Microsoft HPC Pack</strong></a> or with your own grid computing solution. Deploy VMs from a growing list of Windows and Linux
+                            <a href="https://technet.microsoft.com/en-us/library/cc514029.aspx" target="_blank" data-track="true" id="hpc-pack"><strong>Microsoft HPC Pack</strong></a> or with your own grid computing solution. Deploy VMs from a growing list of Windows and Linux
                             images on
-                            <a href="https://azure.microsoft.com/en-us/marketplace/" target="_blank" data-track="true" data-id="azure-marketplace"><strong>Azure Marketplace</strong></a>.</div>
+                            <a href="https://azure.microsoft.com/en-us/marketplace/" target="_blank" data-track="true" id="azure-marketplace"><strong>Azure Marketplace</strong></a>.</div>
                     </div>
                     <div class="az-diagram-label col-xs-5ths col-sm-5ths col-md-5ths col-lg-5ths">
                         <div class="">
                             <div class="az-diagram-number">4</div>
                         </div>
                         <div class="az-diagram-text">If you prefer not to manage compute infrastructure, use
-                            <a href="https://azure.microsoft.com/en-us/services/batch/" target="_blank" data-track="true" data-id="azure-batch"><strong>Azure Batch</strong></a>, a job-scheduling service for running large-scale parallel workloads.</div>
+                            <a href="https://azure.microsoft.com/en-us/services/batch/" target="_blank" data-track="true" id="azure-batch"><strong>Azure Batch</strong></a>, a job-scheduling service for running large-scale parallel workloads.</div>
                     </div>
                     <div class="az-diagram-label col-xs-5ths col-sm-5ths col-md-5ths col-lg-5ths">
                         <div class="">
                             <div class="az-diagram-number">5</div>
                         </div>
                         <div class="az-diagram-text">The output data in cloud storage can be aggregated further with
-                            <a href="https://azure.microsoft.com/en-us/services/hdinsight/" target="_blank" data-track="true" data-id="hdinsights"><strong>Azure HDInsight</strong></a> or Hadoop running on
-                            <a href="https://azure.microsoft.com/en-us/services/virtual-machines/" target="_blank" data-track="true" data-id="azure-iaas"><strong>Azure IaaS</strong></a> VMs.</div>
+                            <a href="https://azure.microsoft.com/en-us/services/hdinsight/" target="_blank" data-track="true" id="hdinsights"><strong>Azure HDInsight</strong></a> or Hadoop running on
+                            <a href="https://azure.microsoft.com/en-us/services/virtual-machines/" target="_blank" data-track="true" id="azure-iaas"><strong>Azure IaaS</strong></a> VMs.</div>
                     </div>
                 </div>
                 <div class="row az-diagram-description-row">
@@ -519,16 +507,16 @@
                             <div class="az-diagram-number">6</div>
                         </div>
                         <div class="az-diagram-text">Create rich predictive models using
-                            <a href="https://azure.microsoft.com/en-us/services/machine-learning/" target="_blank" data-track="true" data-id="azure-ml"><strong>Azure Machine Learning</strong></a> and operationalize the model in your
-                            <a href="https://azure.microsoft.com/en-us/services/data-factory/" target="_blank" data-track="true" data-id="azure-data-factory"><strong>Azure Data Factory</strong></a> data-integration workflow.</div>
+                            <a href="https://azure.microsoft.com/en-us/services/machine-learning/" target="_blank" data-track="true" id="azure-ml"><strong>Azure Machine Learning</strong></a> and operationalize the model in your
+                            <a href="https://azure.microsoft.com/en-us/services/data-factory/" target="_blank" data-track="true" id="azure-data-factory"><strong>Azure Data Factory</strong></a> data-integration workflow.</div>
                     </div>
                     <div class="az-diagram-label col-xs-5ths col-sm-5ths col-md-5ths col-lg-5ths">
                         <div class="">
                             <div class="az-diagram-number">7</div>
                         </div>
                         <div class="az-diagram-text">Move processed data to a cloud or on-premise data-mart using
-                            <a href="https://azure.microsoft.com/en-us/services/data-factory/" target="_blank" data-track="true" data-id="azure-data-factory"><strong>Azure Data Factory</strong></a> and consume it with online tools like
-                            <a href="https://powerbi.microsoft.com/en-us/documentation/powerbi-azure-and-power-bi/" target="_blank" data-track="true" data-id="powerbi"><strong>Microsoft Power BI</strong></a>, or with client analysis and visualization tools.</div>
+                            <a href="https://azure.microsoft.com/en-us/services/data-factory/" target="_blank" data-track="true" id="azure-data-factory"><strong>Azure Data Factory</strong></a> and consume it with online tools like
+                            <a href="https://powerbi.microsoft.com/en-us/documentation/powerbi-azure-and-power-bi/" target="_blank" data-track="true" id="powerbi"><strong>Microsoft Power BI</strong></a>, or with client analysis and visualization tools.</div>
                     </div>
                     <div class="az-diagram-label col-xs-5ths col-sm-5ths col-md-5ths col-lg-5ths">
                         <div class="">
@@ -536,26 +524,26 @@
                         </div>
                         <div class="az-diagram-text">Actuaries and Quantiative Analysts run jobs and consume the results securely once authenticated with corporate account credentials
                             federated with
-                            <a href="https://azure.microsoft.com/en-us/services/active-directory/" target="_blank" data-track="true" data-id="azure-active-directory"><strong>Azure Active Directory</strong></a>.</div>
+                            <a href="https://azure.microsoft.com/en-us/services/active-directory/" target="_blank" data-track="true" id="azure-active-directory"><strong>Azure Active Directory</strong></a>.</div>
                     </div>
                     <div class="az-diagram-label col-xs-5ths col-sm-5ths col-md-5ths col-lg-5ths">
                         <div class="">
                             <div class="az-diagram-number">9</div>
                         </div>
                         <div class="az-diagram-text">Compose, schedule, operationalize, manage and monitor all the data-flow in your solution from a single-pane of glass using
-                            <a href="https://azure.microsoft.com/en-us/services/data-factory/" target="_blank" data-track="true" data-id="azure-data-factory"><strong>Azure Data Factory</strong></a>.</div>
+                            <a href="https://azure.microsoft.com/en-us/services/data-factory/" target="_blank" data-track="true" id="azure-data-factory"><strong>Azure Data Factory</strong></a>.</div>
                     </div>
                     <div class="az-diagram-label col-xs-5ths col-sm-5ths col-md-5ths col-lg-5ths">
                         <div class="">
                             <div class="az-diagram-number">10</div>
                         </div>
                         <div class="az-diagram-text">Create private connections between Azure data-centers and your on-premise clusters with
-                            <a href="https://azure.microsoft.com/en-us/services/expressroute/" target="_blank" data-track="true" data-id="azure-express-route"><strong>Azure Express Route</strong></a>. These connections offer higher security, more reliability, faster speeds and lower latencies.</div>
+                            <a href="https://azure.microsoft.com/en-us/services/expressroute/" target="_blank" data-track="true" id="azure-express-route"><strong>Azure Express Route</strong></a>. These connections offer higher security, more reliability, faster speeds and lower latencies.</div>
                     </div>
                 </div>
                 <div class="az-diagram-link">
                     <div class="right">Visit the
-                        <a href="https://msdn.microsoft.com/dn630664" target="_blank" data-track="true" data-id="animation">Azure Architecture Blueprints Archive</a> to see the animation</div>
+                        <a href="https://msdn.microsoft.com/dn630664" target="_blank" data-track="true" id="animation">Azure Architecture Blueprints Archive</a> to see the animation</div>
                 </div>
             </div>
             <br>
@@ -569,44 +557,44 @@
                 <h2 class="center">Recommended Services</h2>
                 <br>
                 <div class="row">
-                    <a href="https://azure.microsoft.com/en-us/services/batch/" target="_blank" class="col-xs-3 col-md-3 az-service" data-track="true" data-id="azure-batch">
+                    <a href="https://azure.microsoft.com/en-us/services/batch/" target="_blank" class="col-xs-3 col-md-3 az-service" data-track="true" id="azure-batch">
                         <div class="az-service-name">Azure Batch</div>
                         <div class="az-service-image"><img src="images/services/batch.png"></div>
                         <div class="az-service-description">Easily scale-up with our managed Batch service</div>
                     </a>
-                    <a href="https://azure.microsoft.com/en-us/marketplace/partners/microsofthpc/newclusterwindowscn/" target="_blank" class="col-xs-3 col-md-3 az-service" data-track="true" data-id="hpc-pack">
+                    <a href="https://azure.microsoft.com/en-us/marketplace/partners/microsofthpc/newclusterwindowscn/" target="_blank" class="col-xs-3 col-md-3 az-service" data-track="true" id="hpc-pack">
                         <div class="az-service-name">HPC Pack</div>
                         <div class="az-service-image"><img src="images/services/hpcpack.png"></div>
                         <div class="az-service-description">Manage a cloud-based high performance computing (HPC) cluster.</div>
                     </a>
-                    <a href="https://azure.microsoft.com/en-us/services/expressroute/" target="_blank" class="col-xs-3 col-md-3 az-service" data-track="true" data-id="express-route">
+                    <a href="https://azure.microsoft.com/en-us/services/expressroute/" target="_blank" class="col-xs-3 col-md-3 az-service" data-track="true" id="express-route">
                         <div class="az-service-name">Express Route</div>
                         <div class="az-service-image"><img src="images/services/express-route.png"></div>
                         <div class="az-service-description">Dedicated private network fiber connections to Azure</div>
                     </a>
-                    <a href="https://azure.microsoft.com/en-us/services/data-factory/" target="_blank" class="col-xs-3 col-md-3 az-service" data-track="true" data-id="data-factory">
+                    <a href="https://azure.microsoft.com/en-us/services/data-factory/" target="_blank" class="col-xs-3 col-md-3 az-service" data-track="true" id="data-factory">
                         <div class="az-service-name">Data Factory</div>
                         <div class="az-service-image"><img src="images/services/data-factory.png"></div>
                         <div class="az-service-description">Orchestrate and manage data transformation and movement</div>
                     </a>
                 </div>
                 <div class="row">
-                    <a href="https://azure.microsoft.com/en-us/services/hdinsight/" target="_blank" class="col-xs-3 col-md-3 az-service" data-track="true" data-id="hdinsights">
+                    <a href="https://azure.microsoft.com/en-us/services/hdinsight/" target="_blank" class="col-xs-3 col-md-3 az-service" data-track="true" id="hdinsights">
                         <div class="az-service-name">HDInsight</div>
                         <div class="az-service-image"><img src="images/services/hdinsights.png"></div>
                         <div class="az-service-description">Provision managed Hadoop clusters</div>
                     </a>
-                    <a href="https://azure.microsoft.com/en-us/services/active-directory/" target="_blank" class="col-xs-3 col-md-3 az-service" data-track="true" data-id="azure-active-directory">
+                    <a href="https://azure.microsoft.com/en-us/services/active-directory/" target="_blank" class="col-xs-3 col-md-3 az-service" data-track="true" id="azure-active-directory">
                         <div class="az-service-name">Azure Active Directory</div>
                         <div class="az-service-image"><img src="images/services/azure-active-directory.png"></div>
                         <div class="az-service-description">Synchronize on-premises directories and enable single sign-on</div>
                     </a>
-                    <a href="https://azure.microsoft.com/en-us/services/virtual-machines/" target="_blank" class="col-xs-3 col-md-3 az-service" data-track="true" data-id="azure-ml">
+                    <a href="https://azure.microsoft.com/en-us/services/virtual-machines/" target="_blank" class="col-xs-3 col-md-3 az-service" data-track="true" id="azure-ml">
                         <div class="az-service-name">Azure Virtual Machine</div>
                         <div class="az-service-image"><img src="images/services/virtual-machine.png"></div>
                         <div class="az-service-description">Provision Linux or Windows Virtual Machines in minutes</div>
                     </a>
-                    <a href="https://azure.microsoft.com/en-us/services/security-center/" target="_blank" class="col-xs-3 col-md-3 az-service" data-track="true" data-id="security-center">
+                    <a href="https://azure.microsoft.com/en-us/services/security-center/" target="_blank" class="col-xs-3 col-md-3 az-service" data-track="true" id="security-center">
                         <div class="az-service-name">Security Center</div>
                         <div class="az-service-image"><img src="images/services/access-control.png"></div>
                         <div class="az-service-description">Prevent, detect, and respond to threats with increased visibility</div>
@@ -626,7 +614,7 @@
                     <div>Get the power of cloud services, yet maintain control of your datacenter for true hybrid-cloud agility. Easily access public cloud resources to scale at busy times of the year, or whenever you need them. </div>
                     <br>
                     <a href="https://azure.microsoft.com/en-us/overview/azure-stack/"
-                        target="_blank" data-track="true" data-id="azure-stack-learn-more"><div class="az-stack-button">Learn More</div></a>
+                        target="_blank" data-track="true" id="azure-stack-learn-more"><div class="az-stack-button">Learn More</div></a>
                 </div>
             </div>
         </div>
@@ -639,56 +627,56 @@
                 <br>
                 <div class="row-fluid">
                     <a href="https://azure.microsoft.com/en-us/documentation/articles/cloud-services-setup-hybrid-hpcpack-cluster/" target="_blank"
-                    class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4" data-track="true" data-id="getting-started-1">
+                    class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4" data-track="true" id="getting-started-1">
                         <div class="az-getting-started-tab">
                             <div class="az-getting-started-header">Create a hybrid cluster with HPC Pack and Azure instances</div>
                             <div class="az-getting-started-description">Use HPC Pack 2012 R2 and Azure to set up a hybrid HPC cluster, which consists of an on-premises head node (running HPC Pack) and on-demand a Azure cloud service nodes.</div>
                         </div>
                     </a>
                     <a href="https://azure.microsoft.com/en-us/documentation/articles/batch-dotnet-get-started/" target="_blank" 
-                    class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4" data-track="true" data-id="getting-started-2">
+                    class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4" data-track="true" id="getting-started-2">
                         <div class="az-getting-started-tab">
                             <div class="az-getting-started-header">Get started with the Azure Batch library for .NET</div>
                             <div class="az-getting-started-description">Learn the basics of Azure Batch and the Batch .NET library in this article as we discuss a C# sample application step by step.</div>
                         </div>
                     </a>
                     <a href="https://github.com/Azure/azure-quickstart-templates/tree/master/101-vm-from-user-image" target="_blank" 
-                    class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4" data-track="true" data-id="getting-started-3">
+                    class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4" data-track="true" id="getting-started-3">
                         <div class="az-getting-started-tab">
                             <div class="az-getting-started-header">Create a Virtual Machine from a User Image using Templates</div>
                             <div class="az-getting-started-description">This template allows you to create a Virtual Machine from a User image. This template also deploys a Virtual Network, Public IP addresses and a Network Interface.</div>
                         </div>
                     </a>
                     <a href="https://technet.microsoft.com/en-us/library/mt612877.aspx" target="_blank" 
-                    class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4" data-track="true" data-id="getting-started-4">
+                    class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4" data-track="true" id="getting-started-4">
                         <div class="az-getting-started-tab">
                             <div class="az-getting-started-header">Burst to Azure Batch with Microsoft HPC Pack</div>
                             <div class="az-getting-started-description">Extend your HPC Pack cluster to use Azure Batch as compute resources. Using these Azure Batch pools, you can increase (“burst”) the capacity of your HPC cluster on-demand.</div>
                         </div>
                     </a>
                     <a href="https://azure.microsoft.com/en-us/documentation/articles/resource-manager-template-walkthrough/" target="_blank"
-                    class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4" data-track="true" data-id="getting-started-5">
+                    class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4" data-track="true" id="getting-started-5">
                         <div class="az-getting-started-tab">
                             <div class="az-getting-started-header">Deploy with Azure Resource Manager Templates</div>
                             <div class="az-getting-started-description">Use a template to deploy 2 VMs with unique NIC and IP Addresses, a storage account, and a load balancer, in the same subnet on a virtual network.</div>
                         </div>
                     </a>
                     <a href="https://azure.microsoft.com/en-us/documentation/templates/create-hpc-cluster-linux-cn/" target="_blank" 
-                    class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4" data-track="true" data-id="getting-started-6">
+                    class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4" data-track="true" id="getting-started-6">
                         <div class="az-getting-started-tab">
                             <div class="az-getting-started-header">Create an HPC Cluster with Linux Compute Nodes</div>
                             <div class="az-getting-started-description">Use a template to create an HPC cluster with Linux compute nodes.</div>
                         </div>      
                     </a>
                     <a href="https://azure.microsoft.com/en-us/documentation/templates/create-hpc-cluster/" target="_blank" 
-                    class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4" data-track="true" data-id="getting-started-7">
+                    class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4" data-track="true" id="getting-started-7">
                         <div class="az-getting-started-tab">
                             <div class="az-getting-started-header">Create an HPC Cluster with Windows Compute Nodes</div>
                             <div class="az-getting-started-description">Use a template to create an HPC cluster with the latest version of HPC Pack 2012 R2.</div>
                         </div>
                     </a>
                     <a href="https://azure.microsoft.com/en-us/documentation/templates/slurm/" target="_blank" 
-                    class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4" data-track="true" data-id="getting-started-8">
+                    class="az-getting-started-tab-wrapper col-lg-3 col-md-4 col-xs-4" data-track="true" id="getting-started-8">
                         <div class="az-getting-started-tab">
                             <div class="az-getting-started-header">Deploy a Slurm Cluster using a Template</div>
                             <div class="az-getting-started-description">In just a few clicks, this template will help you to spin up a slurm cluster.</div>
