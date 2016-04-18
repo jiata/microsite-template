@@ -16,6 +16,7 @@
 	 * ======================== */
 	
 	var caseStudiesPwd = [
+		"../casestudies/casestudy03.html",
 		"../casestudies/casestudy01.html",
 		"../casestudies/casestudy02.html"
 	];
