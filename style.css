@@ -351,9 +351,11 @@ em {
 }
 .az-fs-compliance-video-text,
 .az-compliance-video-text {
-	color: white;
 	margin-top: 36px;
 	font-size: 18px;
+}
+.az-compliance-video-text {	
+	color: white;
 }
 /* =====================================
    Security
@@ -441,8 +443,8 @@ em {
 	text-decoration: underline;
 }
 .az-compliance-program {
-	color: white;
-	background-color: #222277;
+	color: #333;
+	background-color: white;
 	text-align: center;
 }
 
