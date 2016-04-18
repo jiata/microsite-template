@@ -349,6 +349,7 @@ em {
 .az-compliance-video #vidwrap {
 	margin: 0 auto;
 }
+.az-fs-compliance-video-text,
 .az-compliance-video-text {
 	color: white;
 	margin-top: 36px;
