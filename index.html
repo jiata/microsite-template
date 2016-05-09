@@ -2,35 +2,36 @@
 
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <title>Engineering Simulation On Azure</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Insurance: Risk Modelling on Microsoft Azure</title>
         
         <!--SEO -->
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
-        <title>Simulation on Azure</title>
-        <link rel="canonical" href="https://simulation.azure.com">
+        <title>Insurance: Risk Modelling on Microsoft Azure</title>
+        <link rel="canonical" href="https://insurance.azure.com">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="simulation, engineering simulation, star-ccm+, starcmm, star-ccm, openfoam, azure, cloud, hpc, hpc cloud, microsoft azure, microsoft, star-ccm global conference, intel MPI, high performance computing, azure cloud, CFD, ls-dyna" >
-        <meta name="description" content="Use Microsoft Azure for Engineering Simulation. Azure provides world-class HPC on demand, letting you simulate complex models without having to manage infrastructure.">
+        <meta name="keywords" content="insurnace, risk, simulation, risk simulation, azure, cloud, model, risk modelling, fis, rafm, risk agility fm, mg-alfa, milliman, towers watson, willis towers watson" >
+        <meta name="description" content="Run your risk simulation software that you know and love now with the power and capacity of Microsoft Azure">
         
         <!--FACEBOOK-->
-        <meta property="og:title" content="Engineering Simulation in the Cloud with Microsoft Azure" >
-        <meta property="og:site_name" content="Engineering Simulation on Azure">
-        <meta property="og:url" content="https://simulation.azure.com" >
-        <meta property="og:description" content="Use Microsoft Azure for Engineering Simulation. Azure provides world-class HPC on demand, letting you simulate complex models without having to manage infrastructure." >
-        <meta property="og:image" content="https://simulation.azure.com/images/simulationonazurefb.png" >
+        <meta property="og:title" content="Insurance: Risk Modelling on Microsoft Azure" >
+        <meta property="og:site_name" content="Insurance: Risk Modelling on Microsoft Azure">
+        <meta property="og:url" content="https://insurance.azure.com" >
+        <meta property="og:description" content="Run your risk simulation software that you know and love now with the power and capacity of Microsoft Azure" >
+        <meta property="og:image" content="https://insurance.azure.com/images/meta-banner.png" >
         <meta property="og:type" content="website" >
         <meta property="og:locale" content="en_US" >
         
         <!--TWITTER-->
         <meta property="twitter:card" content="summary" >
-        <meta property="twitter:title" content="Engineering Simulation in the Cloud with Microsoft Azure" >
-        <meta property="twitter:description" content="Use Microsoft Azure for Engineering Simulation. Azure provides world-class HPC on demand, letting you simulate complex models without having to manage infrastructure." >
+        <meta property="twitter:title" content="Insurance: Risk Modelling on Microsoft Azure" >
+        <meta property="twitter:description" content="Run your risk simulation software that you know and love now with the power and capacity of Microsoft Azure" >
         <meta property="twitter:creator" content="@azure" >
-        <meta property="twitter:url" content="https://simulation.azure.com" >
-        <meta property="twitter:image" content="https://simulation.azure.com/images/simulationonazurefb.png" >
+        <meta property="twitter:url" content="https://insurance.azure.com" >
+        <meta property="twitter:image" content="https://insurance.azure.com/images/meta-banner.png" >
 
         <!-- 
         To collect end-user usage analytics about your application, 
@@ -43,36 +44,34 @@
           var appInsights=window.appInsights||function(config){
             function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
             }({
-                instrumentationKey:"492d448d-fb82-45fe-90b4-9a5fdad61e78"
+                instrumentationKey:"564247b5-8d81-484c-9bbf-ba39553b19e3"
             });
                
             window.appInsights=appInsights;
-            //appInsights.trackPageView();
-            appInsights.trackPageView(null, null, {urlReferrer: document.referrer});
+            appInsights.trackPageView();
         </script>
         <!-- Google Analytics -->
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
         
-          ga('create', 'UA-75610322-2', 'auto');
+          ga('create', 'UA-75610322-3', 'auto');
           ga('send', 'pageview');
         
         </script>
     </head>
-    <body class="width-constraint">
+    <body class="width-constraint" id="nav-top">
         <!-- Navigation -->
-        <div class="az-nav width-contraint" id="nav-top">
+        <div class="az-nav width-contraint">
             <div class="container width-contraint">
                 <a target="_blank" href="https://www.azure.com"><div class="az-nav-logo" data-track="true" id="azure-home-page">Microsoft Azure</div></a>
                 <div class="az-nav-right">
-
-                    <div class="az-nav-link" data-id="az-why-azure" data-track="true" id="nav-why-azure">Why Azure?</div>
-                    <div class="az-nav-link" data-id="az-getting-started" data-track="true" id="nav-getting-started">Getting Started</div>
-                    <div class="az-nav-link" data-id="az-applications" data-track="true" id="nav-applications">Applications</div>
-                    <div class="az-nav-link" data-id="az-pricing" data-track="true" id="nav-pricing">Pricing</div>
+                    <a href="#nav-top" style="color: white;"><div class="az-nav-link" data-track="true" id="nav-home">Home</div></a>
+                    <div class="az-nav-link" data-id="az-casestudies" data-track="true" id="nav-casestudies">Case Studies</div>
+                    <div class="az-nav-link" data-id="az-partners" data-track="true" id="nav-partners">Partners</div>
+                    <a target="_blank" href="https://finance.azure.com" style="color: white;"><div class="az-nav-link" data-track="true" id="nav-banking">Banking & Capital Markets</div></a>
                     <a target="_blank" href="mailto:bigcompute@microsoft.com"><div class="az-nav-link" data-track="true" id="nav-contact">Contact Us</div></a>
                     
                 </div>
@@ -84,97 +83,292 @@
             <img src="images/banner.png" class="width-constraint">
             <div class="container width-constraint">
                 <div class="az-banner-text">
-                    <h2>Using <span style="color:#00abec">Microsoft Azure</span> for</h2>
-                    <h1>Engineering Simulation</h1>
-                    <h2>We provide world-class HPC on demand, so that you can simulate 
-    complex models without having to manage infrastructure.</h2>
-                    <a target="_blank" href="https://azure.microsoft.com/en-us/free/"><div class="az-banner-start" data-track="true" id="get-started-for-free">
-                        Get Started for Free
-                    </div></a>
+                    <h1>Insurance: Risk Modelling</h1>
+                    <h2>Run your risk simulation software that you know and love now with the power and capacity of <span style="color:#00abec">Microsoft Azure</span></h2>
+                    <a href="mailto:bigcompute@microsoft.com" style="display: inline-block;"><div class="az-banner-start">Contact Us To Learn More</div></a>
                 </div> 
             </div>
         </div>
         
-        <!-- Announcement
+        <!-- Announcement -->
         <div class="az-announcement width-constraint">
             <div class="container">
-                <img src="images/star-ccm-conference-logo.png">&nbsp;
-                <span>Chat with us in Prague at the Star-CCM Global Conference on March 7-9</span>
+                <span>Chat with us May 3-4 at the <strong>5th Annual Risk Americas</strong> Convention</span>
             </div>    
         </div>
-        -->
+
         <br>
         <br>
         <!-- Why Azure? -->
-        <div class="container az-selling-points width-constraint center"  id="az-why-azure">
-            <h2 class="center">Why Run HPC on Azure?</h2>
-            <br>
-            <div class="row">
-                <div class="az-selling-point col-md-6 col-xs-6" style="margin-right:-1px;">
+        <div class="az-selling-points width-constraint center container"  id="az-why-azure">
+        
+            <div class="row" width="width:100%">
+                <div class="az-selling-point col-xs-4"> <!--style="border-right: 1px solid #eee"-->
                     <img src="images/selling-point-01.png">
-                    <h3>HPC Grade Hardware</h3>
+                    <h3>Speed and Scalability</h3>
                     <div class="az-selling-point-description">
-                        Run your work on <strong>Intel&reg; Xeon&reg; E5 Processors</strong> with <strong>QDR Infiniband</strong> and <strong>RDMA</strong> technology. We support <strong>MPI</strong> applications with a latency of under 3 micro-seconds and non-blocking 32 GB/second throughput. 
+                        Make better decisions by using Azure's virtually unlimited capacity which allows you to run your risk simulations more often and in a fraction of the time. 
                     </div>  
                 </div>
-                <div class="az-selling-point col-md-6 col-xs-6">
+                <div class="az-selling-point col-xs-4">
                     <img src="images/selling-point-02.png">
-                    <h3>Get Started In No Time</h3>
+                    <h3>Unlimited Capacity</h3>
                     <div class="az-selling-point-description">
-                        With our expansive partners ecosystem, rich getting-started tutorials, and wide selection of templates, you can get your workloads up & running in just a few minutes. 
+                        The hybrid cloud is a cost-effective solution that helps you make the most out of your on-premise servers while using Azure cloud for additional capacity when you need it.  
                     </div>  
                 </div>
-            </div>
-            <div class="row">
-                <div class="az-selling-point col-md-6 col-xs-6" style="margin-right:-1px; margin-top:-1px;">
+                <div class="az-selling-point col-xs-4">
                     <img src="images/selling-point-03.png">
-                    <h3>Burst To Cloud</h3>
+                    <h3>Software You Know</h3>
                     <div class="az-selling-point-description">
-                        Run out of compute? Our seamless solutions will help you burst into the cloud, letting you scale your resources as needed. 
-                    </div>  
-                </div>
-                <div class="az-selling-point col-md-6 col-xs-6" style="margin-top: -1px;">
-                    <img src="images/selling-point-04.png">
-                    <h3>Lower Your Costs</h3>
-                    <div class="az-selling-point-description">
-                        With our Pay-As-You-Go model, avoid any upfront and maintenance overhead. And with our premium HPC hardware, you'll be able to do more in less time, letting you make the most out of your software licences.
+                        Our leading ISVs and Grid Software vendors provide the tooling to help you take advantage of Azure's capacity, hassle-free. 
                     </div>  
                 </div>
             </div>
-            
-        </div> 
-        <br>
+        </div>
         <br>
         <br>
         <hr>
-        
+        <!-- Towers / Milliman -->
+        <br>
+        <div class="width-constraint az-cs" id="az-casestudies">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                
+                <!-- Milliman Slide -->
+                <div class="item active">
+                    <div class="container" alt="0">
+                        <div class="az-cs-label left"><a href="https://azure.microsoft.com/en-us/case-studies/?industry=insurance" target="_blank" data-track="true" data-id="case-study-link">CASE STUDIES</a> - Milliman</div>
+                        <br>
+                        <br>
+                        <div class="az-cs-banner">
+                            <img class="az-cs-logo" src="images/milliman_logo.png">
+                            <img class="az-cs-banner-image" src="images/milliman_banner.png">
+                        </div>
+                        <div class="">
+                            <br>
+                            <h2>Transforming Insurance with Azure Cloud</h2>
+                            <br>
+                            With increased regulation of companies—including the upcoming Solvency II Directive in the European Union—the insurance industry has a strong need to control the cost and complexity of IT systems used for actuarial analysis and regulatory reporting. 
+                            <br>
+                            <br>
+                            To help insurance companies manage their high-performance computing needs, Milliman, a global provider of actuarial software and consulting services, launched MG-ALFA that uses Windows Azure to distribute highly complex, mission-critical computing tasks across cloud-based resources. 
+                            <br>
+                            <br>
+                            The result is supercomputer-level processing capability that is enormously scalable and powerful, yet can be delivered at a lower cost and with fewer IT resources than through traditional on-premises IT deployments.
+                            <br>
+                            <br>
+                            With the MG-ALFA cloud-based solution, Milliman clients pay only for the processing and storage capabilities they need, without having to deploy, manage, and upgrade hardware.
+                            <br>
+                            <br>
+                            <hr>
+                            <div class="" style="padding-left:36px;padding-right:36px;">
+                                <h3 style="font-weight: 300"><em>"We estimate that if a grid is used 60 percent of the year, running MG-ALFA operations on Windows Azure can cut the traditional $3 million cost for a traditional on-premises system by at least one-third."</em></h3> 
+                                <div class="right">
+                                    Brian Reid
+                                    <br>
+                                    MG-ALFA Global Sales Director, Milliman
+                                </div>
+                            </div>
+                            <hr>
+                            <br>
+                            <a href="http://www.milliman.com/insight/videos/MG-ALFA-Compute-for-Windows-Azure/" target="_blank">
+                                <img class="az-cs-video-link" src="images/milliman_video.png" >
+                                <div class="az-cs-label"> Watch Milliman's Story </div>
+                            </a>
+                            <br>
+                            <br>
+                            <a href="https://azure.microsoft.com/en-us/case-studies/customer-stories-milliman/" target="_blank">
+                                <div class="az-cs-label">Read the full Case-Study</div>
+                            </a>
+                            <br>
+                            <br>
+                            <a href="http://www.milliman.com/mg-alfa/" target="_blank">
+                                <div class="az-cs-label">Learn more about MF-ALFA</div>
+                            </a>
+                            <br>
+                            <hr>
+                            <a href="#carousel" class="f-right" data-slide="next"  role="button" >
+                                <div class="az-cs-label az-carousel-next"> Read About How Willis Towers Watson Uses Azure &rarr;</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Towers Slide -->
+                <div class="item">
+                    <div class="container" alt="1">
+                        <div class="az-cs-label left"><a href="https://azure.microsoft.com/en-us/case-studies/?industry=insurance" target="_blank" data-track="true" data-id="case-study-link">CASE STUDIES</a> - Willis Towers Watson</div>
+                        <br>
+                        <br>
+                        <div class="az-cs-banner">
+                            <img class="az-cs-logo" src="images/towers_logo.png">
+                            <img class="az-cs-banner-image" src="images/towers_banner.png">
+                        </div>
+                        <div class="">
+                            <br>
+                            <h2>Using Azure to Disrupt the Insurance</h2>
+                            <br>
+                            Towers Watson uses Microsoft Azure to gain competitive advantage, save costs, and broaden the market for its solutions. The power, reliability, and elastic scalability of Azure are crucial contributors to the competitive advantage that Towers Watson gains
+                            <br>
+                            <br>
+                            One of the industries that Willis Towers Watson is changing is auto-insurance. The disruptive challenge is the usage-based insurance (UBI) model.
+                            <br>
+                            <br>
+                            “Unlike some other UBI vendors, we’re not just counting driving events for covered vehicles,” he says. “We actually monitor position, speed, acceleration, and other factors at every second of every journey for every vehicle. We integrate granular environmental data. And we run analytics that are more sophisticated—and more predictive—than those of competitors, which make them more valuable to insurers. Azure is crucial to our ability to do this.”
+                            <br>
+                            <br>
+                            Azure is also crucial to the company’s ability to conduct those analytics cost-effectively. Towers Watson estimates that using Azure saved it 20 percent in initial capital costs compared to building an entirely on-premises solution.
+                            <br>
+                            <br>
+                            <hr>
+                            <div class="" style="padding-left:36px;padding-right:36px;">
+                                <h3 style="font-weight: 300"><em>"There has been a major evolution over the past few years in how we support big computing at Towers Watson, and Microsoft plays a growing role in that support."</em></h3> 
+                                <div class="right">
+                                    Wayne Bullock
+                                    <br>
+                                    Global Leader of Life Insurance Software Dev.
+                                </div>
+                            </div>
+                            <hr>
+                            <br>
+                            <a href="https://www.towerswatson.com/en-US/Services/Tools/riskagility-fm" target="_blank">
+                                <img class="az-cs-video-link" src="images/towers_video.png" >
+                                <div class="az-cs-label"> Watch Willis Towers Watson's Story </div>
+                            </a>
+                            <br>
+                            <br>
+                            <a href="https://customers.microsoft.com/Pages/CustomerStory.aspx?recid=18222" target="_blank">
+                                <div class="az-cs-label">Read the full Case-Study</div>
+                            </a>
+                            <br>
+                            <br>
+                            <a href="https://www.towerswatson.com/en-US/Services/Tools/riskagility-fm" target="_blank">
+                                <div class="az-cs-label">Learn more about Risk Agility FM</div>
+                            </a>
+                            <br>
+                            <br>
+                            <a href="https://azure.microsoft.com/en-us/blog/what-would-you-do-with-100000-cores-big-compute-at-global-scale/" target="_blank">
+                                <div class="az-cs-label">See what Willis Towers Watson did with 100,00 cores</div>
+                            </a>
+                            <br>
+                            <br>
+                            <hr>
+                            <a href="#carousel" class="f-right" data-slide="next"  role="button" >
+                                <div class="az-cs-label az-carousel-next">Read About How Milliman Uses Azure &rarr; </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+              </div>
+
+            </div>
+        </div>
+        <br>
+        <br>               
+        <!-- Package -->
+        <div class="width-constraint az-download-package">
+            <br>
+            <div class="container">
+                <span>Download the <a href="Insurance Risk Modelling - Microsoft Perspectives.pdf" download>Insurance Risk Modelling Publication</a> created by Microsoft</span>
+            </div>    
+            <br>
+        </div>
+        <!-- Graph of On-premise VS Hybrid -->
+        <div class="width-constraint center az-graph">
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <div class="az-selling-point-2">
+                    <h2 class="center" style="padding:0px">Do More With Azure's Limitless Capacity</h2>
+                    <br>
+                    <div class="row">
+                        <div class="col-xs-6 left az-sp-title">
+                            <h3>Traditional Modelling Environment</h3>
+                        </div>
+                        <div class="col-xs-6 left az-sp-title">
+                            <h3>Azure Cloud</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 left">
+                            <img src="/images/onprem-graph.png" style="width:100%">
+                        </div>
+                        <div class="col-xs-6 left">
+                            <img src="/images/cloud-graph.png" style="width:100%">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-xs-6 left">
+                            On-premise servers are a finite resource, often times with not enough capacity to manage peak workloads, while under-utilized and sitting idle the rest of the time. As a result, you are restrained by how often you can run your models and by how long they will take. With less capacity, the same model will also take longer to run. 
+                        </div>
+                        <div class="col-xs-6 left">
+                            With Azure's virtually limitless capacity and unlimited infrastructure resources, you can run your workloads faster and more frequently . In the graph above, you can see that you can achieve larger peaks at higher frequencies. And unlike on-premise, you only pay for what you use.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <!-- Partners -->
+        <div class="container width-constraint" id="az-partners">
+            <br>
+            <br>
+            <h2 class="center">Partners</h2>
+            <br>
+            <div class="az-partner-logos">
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/towers.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/milliman.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/sungard.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/fis.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/rms.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/oliverwyman.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/axis.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/tibco.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/ibm.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/numerix.png"></div>
+            
+            </div>
+        </div>                   
+        <br> 
+        <br>           
+        <hr>
         <!-- Getting Started -->
-        <div class="az-getting-started" id="nav-getting-started">
+        <div class="az-getting-started">
             <br>
             <br>
             <div class="container width-constraint">
-                <h2 class="center">Getting Started</h2>
+                <h2 class="center">Get Started With Our Partner Applications</h2>
                 <br>
                 <div class="row-fluid">
-                    <a href="https://azure.microsoft.com/en-us/marketplace/partners/ubercloud/star-ccm-v10-04/" target="_blank"
+                    <a href="https://www.towerswatson.com/en-US/Services/Tools/riskagility-fm" target="_blank"
                     class="az-getting-started-tab-wrapper col-lg-4 col-md-4 col-xs-4" data-track="true" data-id="getting-started-1">
                         <div class="az-getting-started-tab">
-                            <div class="az-getting-started-header"><h4>Quickly spin up a Star-CCM, OpenFOAM VM</h4></div>
-                            <div class="az-getting-started-description">In one click, spin up a VM running OpenFOAM in the cloud with Star-CCM pre-installed and MPI pre-configured. Just tell us what hardware you want, and we’ll take care of the rest.</div>
+                            <div class="az-getting-started-header"><h4>Run Financial Models with Willis Towers Watson's <strong>Risk Agility FM</strong></h4></div>
+                            <div class="az-getting-started-description">Now powered with Azure, Risk Agility FM enables life insurers to run financial models that accurately reflect their company's products, helping to improve risk and capital management.</div>
                         </div>
                     </a>
-                    <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-classic-hpcpack-cluster-openfoam/" target="_blank" 
+                    <a href="http://www.milliman.com/mg-alfa/" target="_blank" 
                     class="az-getting-started-tab-wrapper col-lg-4 col-md-4 col-xs-4" data-track="true" data-id="getting-started-2">
                         <div class="az-getting-started-tab">
-                            <div class="az-getting-started-header"><h4>Learn how to create an Intel MPI OpenFOAM Cluster</h4></div>
-                            <div class="az-getting-started-description">A getting started tutorial for running OpenFoam with Microsoft HPC Pack on a Linux RDMA cluster in Azure.</div>
+                            <div class="az-getting-started-header"><h4>Deliver your Financial Models with Milliman's <strong>MG-ALFA</strong></h4></div>
+                            <div class="az-getting-started-description">MG-ALFA with Compute in Azure is a robust asset liability modeling (ALM) platform that seamlessly integrates with the vast scalability of Azure's compute.</div>
                         </div>
                     </a>
-                    <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-a8-a9-a10-a11-specs/" target="_blank" 
+                    <a href="http://www.prophet-web.com/services/prophet-cloud-services/" target="_blank" 
                     class="az-getting-started-tab-wrapper col-lg-4 col-md-4 col-xs-4" data-track="true" data-id="getting-started-3">
                         <div class="az-getting-started-tab">
-                            <div class="az-getting-started-header"><h4>Drill in to our hardware specs to find exactly what you need</h4></div>
-                            <div class="az-getting-started-description">Everything you need to know about our Linux HPC Hardware including specs, deployment considerations and how to access the RDMA network.</div>
+                            <div class="az-getting-started-header"><h4>Maximize Value with FIS's <strong> Prophet Cloud Services</strong></h4></div>
+                            <div class="az-getting-started-description">The Prophet Managed Cloud Service (PMCS) provides the Prophet application, the hardware through trusted public cloud providers, along with the management of the system as a single service.</div>
                         </div>
                     </a>
                 </div>
@@ -182,168 +376,8 @@
             <br>
             <br>
         </div>     
-        <hr>
         <br>
-        <br>  
-        
-        <!-- Case Studies -->
-        <div class="az-case-study-wrapper">
-            <br>
-            <br>
-            <div class="container width-constraint" id="az-case-study"></div>
-            <br>
-            <br>
-            <br>
-        </div>
-        
-        <hr>
-        <br>
-                           
-        <!-- Applications -->
-        <div class="container width-constraint" id="az-applications">
-                      
-            <h2>Supported Applications</h2>
-            
-            <br>
-            <table class="az-applications">
-                <tr>
-                    <td>Crash/Dynamics/Impact</td>
-                    <td>LS-DYNA&reg;, PAM-CRASH&reg;, Abaqus/Explicit&reg;, RADIOSS&reg;</td>
-                </tr>
-                <tr>
-                    <td>CFD</td>
-                    <td>AcuSolve&reg;, Abaqus&reg;, Fluent&reg;, STAR-CCM+&reg;, OpenFOAM&reg;, ANSYS CFX&reg; </td>
-                </tr>
-                <tr>
-                    <td>Structural</td>
-                    <td>Abaqus/Standard&reg;, OptiStruct&reg;, ANSYS Mechanical&reg;, MSC NASTRAN&reg;</td>
-                </tr>
-                <tr>
-                    <td>Visualization</td>
-                    <td>Paraview&reg;, Blender&reg;, CEI&reg;, Fieldview&reg;</td>
-                </tr>
-                <tr>
-            </table>
-            <br>
-        </div>
-        
-        <br>
-        <hr>
-        <br>
-        
-        <!-- Pricing -->
-        <div class="container width-contraint">
-            
-            <div id="az-pricing" style="padding-top: 12px;">
-                <h2>Pricing</h2>
-                <br>
-                <h3>Network optimized: fast networking with InifiniBand support</h3>
-                <div class="">
-                    The A8 and A9 virtual machines feature <em>Intel&reg; Xeon&reg; E5 processors</em>, with 32 Gbit/s Infiniband network and remote direct memory access (RDMA) technology. These instances are ideal for Message Passing Interface (MPI) applications, high-performance clusters for modeling and simulations, video encoding, and other compute or network intensive scenarios. These instances are available in select data centers. 
-                </div>
-                <table class="az-pricing-table">
-                    <tr class="az-pricing-table-headers">
-                        <td>Instance</td>
-                        <td>Cores</td>
-                        <td>RAM</td>
-                        <td>Disk Size</td>
-                        <td class="right">Price</td>
-                    </tr>
-                    <tr>
-                        <td><div class="az-pricing-core">A8</div></td>
-                        <td>8</td>
-                        <td>56 GB</td>
-                        <td>382 GB</td>
-                        <td class="right">$0.975/hr (~$725/mo)</td>
-                    </tr>
-                    <tr>
-                        <td><div class="az-pricing-core">A9</div></td>
-                        <td>16</td>
-                        <td>112 GB</td>
-                        <td>382 GB</td>
-                        <td class="right">$1.95/hr (~$1,451/mo)</td>
-                    </tr>  
-                </table>     
-                <br>
-                <h3>Compute Intensive</h3>
-                <div class="">
-                    The A10 and A11 virtual machines feature <em>Intel&reg; Xeon&reg; E5 processors</em>. These are ideal for high-performance clusters for modeling and simulations, video encoding, and other compute intensive scenarios. They are similar to A8 and A9 instance configuration without the Inifiband network and RDMA technology. These instances are available in select data centers. 
-                </div>
-                <table class="az-pricing-table">
-                    <tr class="az-pricing-table-headers">
-                        <td>Instance</td>
-                        <td>Cores</td>
-                        <td>RAM</td>
-                        <td>Disk Size</td>
-                        <td class="right">Price</td>
-                    </tr>
-                    <tr>
-                        <td><div class="az-pricing-core">A10</div></td>
-                        <td>8</td>
-                        <td>56 GB</td>
-                        <td>382 GB</td>
-                        <td class="right">$0.78/hr (~$580/mo)</td>
-                    </tr>
-                    <tr>
-                        <td><div class="az-pricing-core">A11</div></td>
-                        <td>16</td>
-                        <td>112 GB</td>
-                        <td>382 GB</td>
-                        <td class="right">$1.56/hr (~$1,161/mo)</td>
-                    </tr>  
-                </table>    
-                <br>
-                <a target="_blank" href="https://azure.microsoft.com/en-us/pricing/details/virtual-machines/#Linux"><div class="az-pricing-more">See more pricing options</div></a>
-                <br>
-                <div class="az-pricing-note" data-track="true" id="pricing-options">Prices do not include tax. Monthly price estimates are based on 744 hours of usage.</div>
-            </div>
-        </div>
-                
-        <br>
-        <br>
-        <hr>
-        <br>
-            
-        <!-- Partners -->
-        <div class="container width-constraint">
-
-            <h2 class="center">Partners and Ecosystem</h2>
-            
-            <br>
-            
-            <div class="az-partner-logos">
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/altair.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/ansys.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/cd-adapco.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/centos.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/cyclecomputing.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/d3view.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/dassultsystemes.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/esi.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/fujitsu.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/halliburton.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/intel.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/lstc.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/mellanoxtechnologies.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/mscsoftware.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/nodejs.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/openfoam.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/pbsworks.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/python.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/schlumberger.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/scsk.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/siemensplm.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/simulia.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/suse.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/ubercloud.png"></div>
-                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/univa.png"></div>
-            </div>
-            
-        </div>                   
-                    
-        <br>
-        <br> 
-                     
+        <!-- More links
         <div class="az-more-links-wrapper">
             <br>
             <br>
@@ -362,19 +396,19 @@
             <br>
             <br>
             <br> 
-        </div>
-        
-        <!-- Return to top -->
-        <a href="#nav-top" style="color: white;" class="az-back-to-top width-constraint">
+        </div> -->
+        <!-- Learn more -->
+        <div class="width-constraint az-contact">
             <br>
             <div class="container">
-                <span>Return to top</span>
-            </div>
+                <span>Want to learn more? Contact us <a href="mailto:bigcompute@microsoft.com">here</a>.</span>
+            </div>    
             <br>
-        </a>
-        
+        </div>
+
     </body>
     
     <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
 </html>

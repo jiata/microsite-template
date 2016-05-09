@@ -1,5 +1,21 @@
 (function () {
+	
+	var maxHeight = 0;
+	setTimeout(function() {
+	
+		$("#carousel .item").each(function() {
+			maxHeight = (maxHeight > $(this).height()) ? maxHeight : $(this).height();
+			console.log(maxHeight);
+		});
+		$("#carousel .item").each(function() {
+			$(this).height(maxHeight);
+			console.log(maxHeight);
+		})
 		
+		$('#carousel').carousel();
+			
+	}, 2000);
+	
 	/* ========================
 	 * Navigation
 	 * ======================== */
@@ -10,26 +26,7 @@
 			$( window ).scrollTop( $("#"+id).offset().top - 60 );
 		});
 	});
-	 
-	/* ========================
-	 * Case Study Manager
-	 * ======================== */
-	
-	var caseStudiesPwd = [
-		"../casestudies/casestudy03.html",
-		"../casestudies/casestudy01.html",
-		"../casestudies/casestudy02.html"
-	];
 
-	$.each( caseStudiesPwd, function( i, p ) {
-		var caseStudy = $("<div/>");
-		caseStudy.load(caseStudiesPwd[i]);
-		$("#az-case-study").append(caseStudy);
-		if (i != caseStudiesPwd.length-1) {
-			$("#az-case-study").append("<br><hr><br>");
-		}
-	});
-	
 	/* ========================
 	 * Tracking
 	 * ======================== */
