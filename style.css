@@ -160,7 +160,6 @@ em {
    ===================================== */
 .az-nav {
 	position: fixed;
-	/*height: 60px;*/
 	background-color: black;
 	color: white;
 	width: 100%;
@@ -170,7 +169,7 @@ em {
 }
 .az-nav-logo {
 	color: #00abec;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	float: left;
 	margin-left: 24px;
 }
