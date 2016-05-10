@@ -16,9 +16,10 @@
 	 * ======================== */
 	
 	var caseStudiesPwd = [
-		"../casestudies/casestudy03.html",
-		"../casestudies/casestudy01.html",
-		"../casestudies/casestudy02.html"
+		"../casestudies/casestudy04.html",
+		"../casestudies/casestudy03.html"
+		//"../casestudies/casestudy01.html",
+		//"../casestudies/casestudy02.html"
 	];
 
 	$.each( caseStudiesPwd, function( i, p ) {
@@ -30,6 +31,16 @@
 		}
 	});
 	
+	/*
+	$(".az-case-study-mini-container").each(function() {
+		$(this).hover(function(){
+			$(this).find(".az-case-study-mini-text").slideDown();
+		}, function() {
+			$(this).find(".az-case-study-mini-text").slideUp();
+		});
+	});
+	*/
+	
 	/* ========================
 	 * Tracking
 	 * ======================== */
@@ -40,5 +51,5 @@
 			appInsights.trackEvent(name);
 		});
 	});
-	
+
 })();

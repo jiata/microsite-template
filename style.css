@@ -38,9 +38,9 @@ h4 {
 	line-height: 26px;
 	margin: 0px;
 }
-@media (max-width: 960px) {
+@media (max-width: 768px) {
 	body {
-		font-size: 14px;
+		font-size: 16px;
 	}
 	h1 {
 		font-size: 50px;
@@ -52,18 +52,83 @@ h4 {
 	}
 	h3 {
 		font-size: 24px;
+		line-height: 28px;
 	}
 	h4 {
 		font-size: 18px;
 		line-height: 22px;
 	}
 }
-@media (min-width: 1200px) { 
+@media (min-width: 768px) and (max-width: 992px) {
 	body {
 		font-size: 16px;
-	} 
-
+	}
+	h1 {
+		font-size: 50px;
+		line-height: 50px;
+	}
+	h2 {
+		font-size: 24px;
+		line-height: 26px;
+	}
+	h3 {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	h4 {
+		font-size: 18px;
+		line-height: 22px;
+	}
 }
+@media (min-width: 992px) and (max-width: 1200px) {
+	body {
+		font-size: 16px;
+	}
+	h1 {
+		font-size: 50px;
+		line-height: 50px;
+	}
+	h2 {
+		font-size: 24px;
+		line-height: 26px;
+	}
+	h3 {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	h4 {
+		font-size: 18px;
+		line-height: 22px;
+	}
+}
+@media (min-width: 1200px) {
+	body {
+		font-size: 16px;
+	}
+	h1 {
+		font-size: 64px;
+		line-height: 70px;
+	}
+	h2 {
+		font-size: 32px;
+		line-height: 36px;
+	}
+	h3 {
+		font-size: 24px;
+		line-height: 30px;
+	}
+	h4 {
+		font-size: 22px;
+		line-height: 28px;
+	}
+	.az-nav-logo {
+		font-size: 1.5em;
+	}
+	.az-nav-right {
+		font-size: 16px;
+	}
+}
+
 strong {
 	font-weight: 600;
 	font-size: 1.0em;
@@ -94,21 +159,23 @@ em {
    Nav
    ===================================== */
 .az-nav {
-	position: absolute;
-	height: 60px;
+	position: fixed;
+	/*height: 60px;*/
 	background-color: black;
 	color: white;
 	width: 100%;
 	z-index: 100;
 	line-height: 60px;
-	min-width: 800px;
+	min-width: 911px;
 }
 .az-nav-logo {
 	color: #00abec;
 	font-size: 1.5em;
 	float: left;
+	margin-left: 24px;
 }
 .az-nav-right {
+	margin-right: 24px;
 	float: right;
 }
 .az-nav-link {
@@ -182,6 +249,10 @@ em {
 	padding-left: 24px;
 	padding-right: 24px;
 }
+
+/* =====================================
+   Case study
+   ===================================== */
 .az-case-study-wrapper {
 	background-color: white;
 }
@@ -189,6 +260,39 @@ em {
 	background-color: #aaa;
 	height: 1px;
 	border: 0px;
+}
+.az-case-study-mini {
+	position: relative;
+	padding: 15px;
+	margin: 15px;
+}
+.az-case-study-mini-container {
+	position: relative;
+}
+.az-case-study-mini-bg {
+	width: 100%;
+}
+.az-case-study-mini-logo {
+	position: absolute;
+	top: 18px;
+	left: 18px;
+	width: 150px;
+}
+.az-case-study-mini-text {
+	background-color: #00abec;
+	position: absolute;
+	bottom: 0px;
+	/*height: 50%;*/
+	left: 0px;
+	right: 0px;
+	padding: 18px 18px 24px 18px;
+	color: white;
+}
+.az-case-study-mini-text h3 {
+	margin-top: 0px;
+}
+.az-case-study-mini-container:hover {
+	cursor: pointer;
 }
 
 /* =====================================

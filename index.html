@@ -3,6 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Engineering Simulation On Azure</title>
@@ -65,12 +66,13 @@
     <body class="width-constraint">
         <!-- Navigation -->
         <div class="az-nav width-contraint" id="nav-top">
-            <div class="container width-contraint">
+            <div class="width-contraint">
                 <a target="_blank" href="https://www.azure.com"><div class="az-nav-logo" data-track="true" id="azure-home-page">Microsoft Azure</div></a>
                 <div class="az-nav-right">
 
                     <div class="az-nav-link" data-id="az-why-azure" data-track="true" id="nav-why-azure">Why Azure?</div>
                     <div class="az-nav-link" data-id="az-getting-started" data-track="true" id="nav-getting-started">Getting Started</div>
+                    <div class="az-nav-link" data-id="az-case-studies" data-track="true" id="nav-case-studies">Case Studies</div>
                     <div class="az-nav-link" data-id="az-applications" data-track="true" id="nav-applications">Applications</div>
                     <div class="az-nav-link" data-id="az-pricing" data-track="true" id="nav-pricing">Pricing</div>
                     <a target="_blank" href="mailto:bigcompute@microsoft.com"><div class="az-nav-link" data-track="true" id="nav-contact">Contact Us</div></a>
@@ -149,7 +151,7 @@
         <hr>
         
         <!-- Getting Started -->
-        <div class="az-getting-started" id="nav-getting-started">
+        <div class="az-getting-started" id="az-getting-started">
             <br>
             <br>
             <div class="container width-constraint">
@@ -170,11 +172,11 @@
                             <div class="az-getting-started-description">A getting started tutorial for running OpenFoam with Microsoft HPC Pack on a Linux RDMA cluster in Azure.</div>
                         </div>
                     </a>
-                    <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-a8-a9-a10-a11-specs/" target="_blank" 
+                    <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-classic-hpcpack-cluster-starccm/" target="_blank" 
                     class="az-getting-started-tab-wrapper col-lg-4 col-md-4 col-xs-4" data-track="true" data-id="getting-started-3">
                         <div class="az-getting-started-tab">
-                            <div class="az-getting-started-header"><h4>Drill in to our hardware specs to find exactly what you need</h4></div>
-                            <div class="az-getting-started-description">Everything you need to know about our Linux HPC Hardware including specs, deployment considerations and how to access the RDMA network.</div>
+                            <div class="az-getting-started-header"><h4>Run STAR-CCM+ with HPC Pack on a Linux RDMA cluster</h4></div>
+                            <div class="az-getting-started-description">This article shows you how to deploy a Microsoft HPC Pack cluster on Azure and run a CD-adapco STAR-CCM+ job on multiple Linux compute nodes that are interconnected with InfiniBand.</div>
                         </div>
                     </a>
                 </div>
@@ -184,14 +186,46 @@
         </div>     
         <hr>
         <br>
-        <br>  
         
         <!-- Case Studies -->
-        <div class="az-case-study-wrapper">
-            <br>
+        <div class="az-case-study-wrapper" id="az-case-studies">
             <br>
             <div class="container width-constraint" id="az-case-study"></div>
-            <br>
+            <div class="container">
+                <br>
+                <hr>
+                <br>
+                <div class="row">
+                    <div class="col-xs-6 az-case-study-mini">
+                        <div class=""><a href="https://azure.microsoft.com/en-us/case-studies" target="_blank" data-track="true" data-id="case-study-link">CASE STUDY</a> - d3VIEW</div>
+                        <br>
+                        <a target="_blank" href="https://customers.microsoft.com/Pages/CustomerStory.aspx?recid=22088" data-track="true" data-id="case-study-d3view">
+                            <div class="az-case-study-mini-container">
+                                <img class="az-case-study-mini-bg" src="images/csm_d3view_image.png">
+                                <img class="az-case-study-mini-logo" src="images/csm_d3view_logo.png">
+                                <div class="az-case-study-mini-text">
+                                    <h3>Learning from d3VIEW</h3>
+                                    <div>"We thought we would need to port our product to another operating system first, but Azure has full support for Linux and open-source languages."</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 az-case-study-mini">
+                        <div class=""><a href="https://azure.microsoft.com/en-us/case-studies" target="_blank" data-track="true" data-id="case-study-link">CASE STUDY</a> - Star-CCM+</div>
+                        <br>
+                        <a target="_blank" href="https://www.theubercloud.com/team-185-air-flow-through-an-engine-intake-manifold-on-microsoft-azure/" data-track="true" data-id="case-study-starccm">
+                            <div class="az-case-study-mini-container">
+                                <img class="az-case-study-mini-bg" src="images/csm_starccm_image.png">
+                                <img class="az-case-study-mini-logo" src="images/csm_starccm_logo.png">
+                                <div class="az-case-study-mini-text">
+                                    <h3>STAR-CCM+ on Azure Cloud</h3>
+                                    <div>"Excellent performance of the STAR-CCM+ container eliminates the need to have all software in-house. HPC on Azure provides the packaged software ready to go for faster analysis."</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
             <br>
             <br>
         </div>
@@ -327,6 +361,7 @@
                 <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/mellanoxtechnologies.png"></div>
                 <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/mscsoftware.png"></div>
                 <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/nodejs.png"></div>
+                <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/rescale.png"></div>
                 <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/openfoam.png"></div>
                 <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/pbsworks.png"></div>
                 <div class="az-partner-logo col-md-2 col-xs-3"><img src="images/partners/python.png"></div>
