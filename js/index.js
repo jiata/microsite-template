@@ -49,6 +49,7 @@
 		var name = $(this).attr('id');
 		$(this).click( function() {
 			appInsights.trackEvent(name);
+			mixpanel.track(name);
 		});
 	});
 
