@@ -1,4 +1,6 @@
 (function () {
+	
+	mixpanel.track("page-loaded");
 		
 	/* ========================
 	 * Navigation
