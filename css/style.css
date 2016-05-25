@@ -220,6 +220,17 @@ em {
 	margin-top: 24px;
 	text-align: center;
 }
+.az-banner-nav {
+	position: absolute;
+	color: white;
+	text-align: center;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.az-banner-scroll-down {
+	margin-bottom: 12px;
+}
 
 /* =====================================
    Announcement
@@ -461,6 +472,9 @@ em {
 	display: block;
 }
 
+/* =====================================
+   Package download
+   ===================================== */
 .az-download-package a {
 	color: white;
 	text-transform: uppercase;
@@ -468,6 +482,24 @@ em {
 }
 .az-download-package a:hover {
 	text-decoration: underline;
+}
+.az-package-text-wrapper {
+	position: relative;
+}
+.az-package-text {
+	position: absolute;
+	text-align: left;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.az-package-img {
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+.az-package-download {
+	background-color: white;
+	color: dodgerblue;
+	padding: 10px 20px;
+	display: inline-block;
 }
 .az-contact a {
 	color: white;

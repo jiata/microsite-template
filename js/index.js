@@ -30,11 +30,12 @@
 	/* ========================
 	 * Tracking
 	 * ======================== */
-	 
+	mixpanel.track("page-loaded"); 
 	$( "[data-track='true']").each( function() {
 		var name = $(this).attr('id');
 		$(this).click( function() {
 			appInsights.trackEvent(name);
+			mixpanel.track(name);
 		});
 	});
 	
