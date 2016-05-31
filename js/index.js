@@ -16,6 +16,10 @@
 			
 	}, 2000);
 	
+	$(".az-carousel-nav").click(function() {
+		$("#carousel").carousel({ interval: 15000 });
+	});
+	
 	/* ========================
 	 * Navigation
 	 * ======================== */
