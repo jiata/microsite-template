@@ -17,8 +17,8 @@
 	 * ======================== */
 	 
 	var caseStudiesPwd = [
-		"../casestudies/casestudy01.html"//,
-		//"../casestudies/casestudy02.html"
+		"../casestudies/casestudy01.html",
+		"../casestudies/casestudy02.html"
 	];
 
 	$.each( caseStudiesPwd, function( i, p ) {
