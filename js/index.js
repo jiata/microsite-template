@@ -18,6 +18,7 @@
 	 * ======================== */
 	
 	var caseStudiesPwd = [
+		"../casestudies/casestudy05.html",
 		"../casestudies/casestudy04.html",
 		"../casestudies/casestudy03.html"
 		//"../casestudies/casestudy01.html",
